@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        
+
+        <!-- Action -->
+        <record id="action_manager_commission_report" model="ir.actions.act_window">
+            <field name="name">Manager Commission Report</field>
+            <field name="res_model">manager.commission.report</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Wizard View -->
+        <record id="view_manager_commission_report_form" model="ir.ui.view">
+            <field name="name">manager.commission.report.form</field>
+            <field name="model">manager.commission.report</field>
+            <field name="arch" type="xml">
+                <form string="Manager Commission Report">
+                    <group>
+                        <group>
+                            <field name="manager_id"/>
+                        
+                            <group>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                            </group>
+                        </group>
+                    </group>
+                    <button string="Generate Line" type="object" name="action_generate_report" class="btn-primary" invisible="not manager_id or  not start_date and not end_date" 
+                    />
+                    <!-- attrs="{invisible:['|',('manager_id','=','False'),('start_date','==','False'),('end_date','=','False')]}" -->
+                    <button string="Cancel" class="btn-secondary"/>
+                    <notebook>
+                        <page string="Commission Lines">
+                            <field name="commission_line_ids">
+                                <list>
+                                    <field name="product_id"/>
+                                    <field name="product_uom_id"/>
+                                    <field name="quantity"/>
+                                    <field name="price_unit"/>
+                                    <field name="subtotal"/>
+                                    <field name="commission"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <!-- Menu Item -->
+        <menuitem id="menu_manager_commission_report"
+                  name="Manager Commission Report"
+                  parent="sale.menu_sale_report"
+                  action="action_manager_commission_report"/>
+    </data>
+</odoo>
