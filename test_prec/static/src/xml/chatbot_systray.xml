@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="test_prec.ChatbotSystray">
+        <div class="o_chatbot_systray d-flex align-items-center">
+            <button t-on-click="openChatbot" class="fa fa-address-card" title="Chatbot"/>
+        </div>
+    </t>
+</templates>

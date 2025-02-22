@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_my_custom_form" model="ir.ui.view">
+            <field name="name">my.custom.form</field>
+            <field name="model">my.custom</field>
+            <field name="arch" type="xml">
+                <form string="Test Prec">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="latitude"/>
+                            <field name="longitude"/>
+                            <!-- <iframe> -->
+                            <!-- <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox='latitude'+0.01,'longitude'+0.01&amp;layer=mapquest&amp;marker='latitude','longitude'" style="border: 1px solid black"> -->
+
+                            <!-- </iframe> -->
+                            <!-- <iframe src=
+                                    width="100%" height="300" style="border:0;">
+                            </iframe> -->
+                            <!-- <span class="w-0 h-50">
+                            </span> -->
+                            <widget name="map_view_widget" latField="latitude" lonField="longitude"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_my_custom_tree" model="ir.ui.view">
+            <field name="name">my.custom.tree</field>
+            <field name="model">my.custom</field>
+            <field name="arch" type="xml">
+                <list string="Test Prec">
+                    <field name="name"/>
+                    <field name="latitude"/>
+                    <field name="longitude"/>
+                </list>
+            </field>
+        </record>
+        <record id="action_my_custom" model="ir.actions.act_window">
+            <field name="name">Test Prec</field>
+            <field name="res_model">my.custom</field>
+            <field name="view_mode">list,form</field>
+            <field name="target">current</field>
+        </record>
+        <menuitem id="menu_my_custom" name="Test Prec" action="action_my_custom"/>
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xmls="http://www.w3.org/1999/xhtml">
+    <t t-name="test_prec.MapViewWidget">
+        <div t-ref="map" class="o_location_selector_map w-100 flex-grow-1 h-100">
+            <!-- <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" t-att-src="'http://www.openstreetmap.org/export/embed.html?bbox=' + bbox + '&amp;layer=mapquest&amp;marker=' + state.latitude + ',' + state.longitude" style="border: 1px solid black">
+            </iframe> -->
+        </div>
+    </t>
+</templates>

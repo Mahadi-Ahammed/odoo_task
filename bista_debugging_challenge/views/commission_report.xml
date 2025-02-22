@@ -20,13 +20,13 @@
                         <group>
                             <field name="manager_id"/>
                         
-                            <group>
-                                <field name="start_date"/>
-                                <field name="end_date"/>
-                            </group>
+                        </group>
+                        <group>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
                         </group>
                     </group>
-                    <button string="Generate Line" type="object" name="action_generate_report" class="btn-primary" invisible="not manager_id or  not start_date and not end_date" 
+                    <button string="Generate Line" type="object" name="action_generate_report" class="btn-primary" invisible="not manager_id and (not start_date or not end_date)" 
                     />
                     <!-- attrs="{invisible:['|',('manager_id','=','False'),('start_date','==','False'),('end_date','=','False')]}" -->
                     <button string="Cancel" class="btn-secondary"/>

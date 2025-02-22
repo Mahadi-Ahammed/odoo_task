@@ -19,7 +19,7 @@ class SaleOrder(models.Model):
     @api.model
     def create(self, vals):
         if self.env.user.partner_id.is_area_manager:
-            vals.update({'area_manager_id': self.env.user.id})
+            vals.update({'area_manager_id': self.env.user.partner_id.id})
         res = super(SaleOrder, self).create(vals)
         return res
     
@@ -69,7 +69,7 @@ class SaleOrderLine(models.Model):
             'sequence': self.sequence,
             'name': self.env['account.move.line']._get_journal_items_full_name(self.name, self.product_id.display_name),
             'product_id': self.product_id.id,
-            'product_uom_id': self.product_id.uom_po_id.id,
+            'product_uom_id': self.product_uom.id,
             'quantity': self.product_uom_qty,
             'discount': 15.00,
             'price_unit': self.product_id.list_price,
@@ -127,7 +127,7 @@ class StockQuant(models.Model):
         return {
             'name': name,
             'product_id': self.product_id.id,
-            'product_uom': self.product_id.uom_po_id.id,
+            'product_uom': self.product_uom_id.id,
             'product_uom_qty': qty,
             'company_id': self.company_id.id or self.env.company.id,
             'state': 'confirmed',
@@ -138,8 +138,8 @@ class StockQuant(models.Model):
             'picked': True,
             'move_line_ids': [(0, 0, {
                 'product_id': self.product_id.id,
-                'product_uom_id': self.product_id.uom_po_id.id,
-                'quantity': 1,
+                'product_uom_id': self.product_uom_id.id,
+                'quantity': qty,
                 'location_id': location_id.id,
                 'location_dest_id': location_dest_id.id,
                 'company_id': self.company_id.id or self.env.company.id,
@@ -178,25 +178,25 @@ class ManagerCommissionReport(models.TransientModel):
         if self.start_date > self.end_date:
             raise UserError('End Date should be greater than Start Date.')
         if self.manager_id:
-            orders = self.env['sale.order'].search([('area_manager_id', '=', self.manager_id.id), ('date_order', '<=', self.start_date), ('date_order', '>=', self.end_date)])
+            orders = self.env['sale.order'].search([('area_manager_id', '=', self.manager_id.partner_id.id), ('date_order', '>=', self.start_date), ('date_order', '<=', self.end_date)])
         else:
             orders = self.env['sale.order'].search([('date_order', '>=', self.start_date), ('date_order', '<=', self.end_date)])
         commission_lines = []
         for order in orders:
             for line in order.order_line:
                 commission_lines.append((0, 0, {
-                    'product_id': line.product_id.id,
+                    'product_id': line.product_id.product_tmpl_id.id,
                     'product_uom_id': line.product_uom.id,
                     'quantity': line.product_uom_qty,
                     'price_unit': line.price_unit,
                     'subtotal': line.price_subtotal,
                     'commission': line.price_subtotal * 0.05,
                 }))
-            self.commission_line_ids = commission_lines
-
+                self.commission_line_ids = commission_lines
         return {
             'type': 'ir.actions.act_window',
             'res_model': 'manager.commission.report',
             'view_mode': 'form',
+            'res_id': self.id,
             'target': 'new',
         }
