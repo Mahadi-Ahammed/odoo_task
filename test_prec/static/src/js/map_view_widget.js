@@ -55,4 +55,4 @@ export const mapViewWidget = {
     additionalClasses: ["o_map_view_widget"],
 }
 
-registry.category("view_widgets").add("map_view_widget", mapViewWidget);
+// registry.category("view_widgets").add("map_view_widget", mapViewWidget);
