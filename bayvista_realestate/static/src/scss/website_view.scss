@@ -1,0 +1,78 @@
+$md-container-max-widths: (
+    sm: 540px,
+    md: 920px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px) !default;
+
+body:has(.md-sheet) {
+    background-color: #EDEDED;
+    ol.breadcrumb {
+        color: white;
+
+        .fa-home {
+            color: white;
+        }
+    }
+}
+
+body:has(.md-container) {
+    background-color: #EDEDED;
+}
+
+
+.property-detail-section {
+    background-color: #F5F5F5;
+
+    h1 {
+        color: #1A2B50;
+    }
+
+    .property-info {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1
+        );
+
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 10px;
+}
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #757575 !important;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+    
+    transition: none;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    /* Ensure no change on hover */
+    color: #000 !important;
+    opacity: 1;
+    text-decoration: none !important;
+}
+
+.slider-prev {
+    left: 5px;
+}
+
+.slider-next {
+    right: 5px;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="property_details" name="Property details page">
+        <t t-call="website.layout">
+            <section class="md-container property-detail-section py-5">
+                <div class="container">
+                    <!-- Property Title -->
+                    <h1 class="mb-4" t-esc="prop.name" />
+
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="slider-wrapper" style="position: relative;">
+                                
+                                <div class="property-images-container" style="position: relative;">
+                                    <t t-foreach="images" t-as="img_id">
+                                        <div class="property-image" style="display: none;">
+                                            <t t-if="img_id">
+                                                <img t-att-src="'/web/content/%s' % img_id" alt="Property Image"
+                                                    style="width: 100%; height: auto;" />
+                                            </t>
+                                            <t t-if="not img_id">
+                                                <img src="/bayvista_realestate/static/src/img/placeholder.png"
+                                                    alt="Property Image" style="width: 100%; height: auto;" />
+                                            </t>
+                                        </div>
+                                    </t>
+                                </div>
+                                
+                                <a href="#" class="slider-prev"
+                                    style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); font-size: 2em; color: #000;">
+                                    &#10094;</a>
+                                <a href="#" class="slider-next"
+                                    style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); font-size: 2em; color: #000;">
+                                    &#10095;</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Information (Right Column) -->
+                        <div class="col-md-6">
+                            <div class="property-info">
+                                <h3>Property Information</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <strong>Address:</strong> 
+                            <span t-esc="prop.street" /> , <span
+                                            t-esc="prop.city" /> , <span t-esc="prop.state_id.name" />
+                                        , <span t-esc="prop.zip_code" /> , <span
+                                            t-esc="prop.country_id.name" />
+                                    </li>
+                                    <li>
+                                        <strong>Bedrooms:</strong>
+                                        <span t-esc="prop.number_bed" />
+                                    </li>
+                                    <li>
+                                        <strong>Bathrooms:</strong>
+                                        <span t-esc="prop.number_bath" />
+                                    </li>
+                                    <li>
+                                        <strong>Square Feet:</strong>
+                                        <span t-esc="prop.square_feet" />
+                                    </li>
+                                    <li>
+                                        <strong>Property For:</strong>
+                                        <span t-esc="prop.property_for.capitalize()" />
+                                    </li>
+                                </ul>
+                                
+                                <h3>Facilities &amp; Features</h3>
+                                <p t-esc="prop.facilities" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+</odoo>
