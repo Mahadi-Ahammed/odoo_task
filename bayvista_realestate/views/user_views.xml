@@ -1,0 +1,141 @@
+<odoo>
+
+
+    <record id="view_bay_vista_user_kanban" model="ir.ui.view">
+        <field name="name">bay.vista.user.kanban</field>
+        <field name="model">bay.vista.user</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_view">
+                <field name="id"/>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="role"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_card">
+                            
+                            <!-- Profile Picture -->
+                            <div class="o_kanban_image">
+                                <field name="image" widget="image" class="oe_avatar"/>
+                            </div>
+
+                            <!-- User Information -->
+                            <div class="oe_kanban_details">
+                                <strong>
+                                    <field name="name"/>
+                                </strong>
+                                <div>
+                                    <span>
+                                        <field name="email"/>
+                                    </span>
+                                </div>
+
+                                <!-- Role Tag -->
+                                <div class="o_badge o_kanban_badge">
+                                    <t t-if="record.role.raw_value == 'buyer'">
+                                        <span class="o_tag o_tag_blue">Buyer</span>
+                                    </t>
+                                    <t t-if="record.role.raw_value == 'owner'">
+                                        <span class="o_tag o_tag_green">Owner</span>
+                                    </t>
+                                    <t t-if="record.role.raw_value == 'admin'">
+                                        <span class="o_tag o_tag_purple">Admin</span>
+                                    </t>
+                                </div>
+                                
+                                <!-- Address -->
+                                <div class="o_kanban_secondary">
+                                    <field name="street"/>
+                                    <t t-if="record.city.raw_value">
+                                        , <field name="city"/>
+                                    </t>
+                                    <t t-if="record.country_id.raw_value">
+                                        , <field name="country_id"/>
+                                    </t>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- USER FORM VIEW -->
+    <record id="view_bay_vista_user_form" model="ir.ui.view">
+        <field name="name">bay.vista.user.form</field>
+        <field name="model">bay.vista.user</field>
+        <field name="arch" type="xml">
+            <form string="User Details">
+                <sheet>
+                    <!-- Profile Picture -->
+                    <field name="image" widget="image" class="oe_avatar"/>
+
+                    <!-- Title -->
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Full Name" required="True"/>
+                        </h1>
+                    </div>
+
+                    <group>
+                        <group>
+                            <span class="o_form_label o_td_label" name="address_name">
+                                <b>Address</b>
+                            </span>
+                            <div class="o_address_format">
+                                <field name="street" placeholder="Street" class="o_address_street" />
+                                <field name="city" placeholder="City" class="o_address_city" />
+                                <field name="state_id" class="o_address_state" placeholder="State" />
+                                <field name="zip_code" placeholder="ZIP" class="o_address_zip" />
+                                <field name="country_id" placeholder="Country" class="o_address_country"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="email"/>
+                            <field name="role" widget="radio"/> <!-- Role selection as radio buttons -->
+                            <field name="password" password="True"/>
+                        </group>
+
+                        <!-- Linked Odoo User -->
+                        <!-- <group>
+                            <field name="odoo_user_id" readonly="1"/>
+                        </group> -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- USER LIST VIEW -->
+    <record id="view_bay_vista_user_list" model="ir.ui.view">
+        <field name="name">bay.vista.user.list</field>
+        <field name="model">bay.vista.user</field>
+        <field name="arch" type="xml">
+            <list string="Users">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="role"/>
+            </list>
+        </field>
+    </record>
+
+
+
+
+    <record id="view_res_users_form" model="ir.ui.view">
+        <field name="name">res.users.form.inherit.bayvista</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="inside">
+                <group>
+                    <field name="role_sync"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

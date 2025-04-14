@@ -1,0 +1,185 @@
+<odoo>
+
+
+    <!-- Search View -->
+    <record id="view_property_search" model="ir.ui.view">
+        <field name="name">bay.vista.property.search</field>
+        <field name="model">bay.vista.property</field>
+        <field name="arch" type="xml">
+            <search string="Search Properties">
+                <field name="name"/>
+                <field name="city"/>
+                <field name="zip_code"/>
+                <field name="state_id"/>
+                <field name="country_id"/>
+                <field name="property_for"/>
+                <field name="number_bed"/>
+                <field name="number_bath"/>
+                <field name="square_feet"/>
+
+                <group string="Filters">
+                    <filter string="For Sale" name="filter_for_sale" domain="[('property_for', '=', 'sale')]"/>
+                    <filter string="For Rent" name="filter_for_rent" domain="[('property_for', '=', 'rent')]"/>
+                    <filter string="City" name="filter_city" domain="[('city', '!=', False)]"/>
+                    <filter string="Country" name="filter_country" domain="[('country_id', '!=', False)]"/>
+                    <filter string="More than 3 Bedrooms" name="filter_3_bedrooms" domain="[('number_bed', '>', 3)]"/>
+                    <filter string="More than 2 Bathrooms" name="filter_2_bathrooms" domain="[('number_bath', '>', 2)]"/>
+                    <filter string="Large Size (Above 2000 sq ft)" name="filter_large_size" domain="[('square_feet', '>', 2000)]"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_property_form" model="ir.ui.view">
+        <field name="name">bay.vista.property.form</field>
+        <field name="model">bay.vista.property</field>
+        <field name="arch" type="xml">
+            <form string="Bay Vista Property">
+                <header>
+                    <field name="stage_id" widget="statusbar" statusbar_visible="draft,available,under_offer,sold"
+                            options="{'clickable': '1'}"
+                        />
+                </header>
+                <sheet>
+                    <field name="property_image" widget="image" class="oe_avatar"/>
+                    <!-- Title -->
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Property Name" required="True" readonly="stage_name == 'Sold'"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <span class="o_form_label o_td_label" name="address_name">
+                                <b>Address</b>
+                            </span>
+                            <div class="o_address_format">
+                                <field name="street" placeholder="Street" class="o_address_street" />
+                                <field name="city" placeholder="City" class="o_address_city" />
+                                <field name="state_id" class="o_address_state" placeholder="State" />
+                                <field name="zip_code" placeholder="ZIP" class="o_address_zip" />
+                                <field name="country_id" placeholder="Country" class="o_address_country"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="number_bed"/>
+                            <field name="number_bath"/>
+                            <field name="square_feet"/>
+                            <field name="property_for"/>
+                        </group>
+                        <group>
+                            <field name="latitude" invisible="1"/>
+                            <field name="longitude" invisible="1"/>
+                        </group>
+                     
+                        
+                    </group>
+                    <notebook>
+                        <page string="Map View">
+                            <widget name="map_view_widget" latField="latitude" lonField="longitude"/>
+                        </page>
+                        <page string="Property Images">
+                            <field name="image_ids">
+                                <list editable="bottom">
+                                    <field name="image" widget="image"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Bilings">
+                            <group invisible="property_for == 'rent'">
+                                <group>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="sale_price" widget='monetary'/>
+                                </group>
+                                <group>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <label for="offer" class="o_form_label">
+                                                <b>Offer</b>
+                                            </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <field name="offer" nolabel="1"/>
+                                        </div>
+                                        <div class="col-7">
+                                            % OFF
+                                        </div>
+                                    </div>
+                                    <field name="offer_price" widget='monetary'/>
+                                    <field name="offer_price_date_expire_date"/>
+                                </group>
+                            </group>
+                            <group invisible="property_for == 'sale'">
+                                <field name="rent_price" widget='monetary'/>
+                                <field name="booking_price" widget='monetary'/>
+                            </group>
+                        </page>
+                        <page string="Facilities and Features">
+                            <field name="facilities"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_property_kanban" model="ir.ui.view">
+        <field name="name">bay.vista.property.kanban</field>
+        <field name="model">bay.vista.property</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_vista" default_group_by="stage_id"  quick_create="1" group_create="0">
+                <field name="stage_id"/>
+                <field name="name"/>
+                <groups>
+                    <group expand="1" string="All Stages" name="stage_id">
+                        <field name="stage_id" domain="[]" />
+                    </group>
+                </groups>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record">
+                            <div class="o_kanban_card">
+                                <div class="o_kanban_image_fill property_img">
+                                    <field name="property_image" widget="image"/>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <strong>
+                                        <field name="name"/>
+                                    </strong>
+    
+                                    <!-- Address -->
+                                    <div class="o_kanban_secondary">
+                                        <field name="street"/>
+                                        <t t-if="record.city.raw_value">
+                                            , <field name="city"/>
+                                        </t>
+                                        <t t-if="record.country_id.raw_value">
+                                            , <field name="country_id"/>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+
+    </record>
+
+    <record id="view_property_list" model="ir.ui.view">
+        <field name="name">bay.vista.property.list</field>
+        <field name="model">bay.vista.property</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="city"/>
+                <field name="zip_code"/>
+                <field name="number_bed"/>
+                <field name="property_for"/>
+            </list>
+        </field>
+    </record>
+
+</odoo>

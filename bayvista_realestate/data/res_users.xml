@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        
+        <record model="res.partner" id="bot_partner">
+            <field name="name">BayVista Bot</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">chatbot@test.com</field>
+            <field name="active" eval="True"/>
+        </record>
+
+        <!-- Bot User -->
+        <record id="bot_user" model="res.users">
+            <field name="name">BayVista Bot</field>
+            <field name="login">chatbot</field>
+            <field name="password">chatbot</field>
+            <field name="email">chatbot@test.com</field>
+            <field name="notification_type">inbox</field>
+            <field name="active" eval="True"/>
+            <field name="partner_id" ref="bot_partner"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="company_ids" eval="[Command.link(ref('base.main_company'))]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+        <!-- Hide "To-do", "Project", "Email Marketing", "Surveys", "Employees", "Link Tracker" -->
+        <menuitem
+            id="project_todo.menu_todo_todos"
+            name="To-do"
+            action="project_todo.project_task_preload_action_todo"
+            web_icon="project_todo,static/description/icon.png"
+            active="False">
+        </menuitem>
+
+    <menuitem name="Contacts"
+        id="contacts.menu_contacts"
+        sequence="20"
+        web_icon="contacts,static/description/icon.png"
+        groups="base.group_user,base.group_partner_manager"
+        active="False"/>
+
+    <menuitem
+        name="Project"
+        id="project.menu_main_pm"
+        web_icon="project,static/description/icon.png"
+        sequence="70"
+        active="False"
+    />
+
+    <menuitem name="Email Marketing"
+              id="mass_mailing.mass_mailing_menu_root"
+              sequence="115"
+              web_icon="mass_mailing,static/description/icon.png"
+              active="False"/>
+    
+    <menuitem name="Surveys"
+      id="survey.menu_surveys"
+      sequence="130"
+      web_icon="survey,static/description/icon.png"
+      active="False"/>
+
+    <menuitem
+            id="hr.menu_hr_root"
+            name="Employees"
+            active="False"
+            web_icon="hr,static/description/icon.png"
+            sequence="185"/>
+
+    <menuitem id="utm.menu_link_tracker_root"
+        name="Link Tracker"
+        sequence="270"
+        web_icon="utm,static/description/icon.png"
+        active="False"/>
+
+
+    <menuitem name="Discuss"
+        id="mail.menu_root_discuss"
+        web_icon="mail,static/description/icon.png"
+        active="False"
+        sequence="5"
+    />
+
+
+    </data>
+    
+</odoo>

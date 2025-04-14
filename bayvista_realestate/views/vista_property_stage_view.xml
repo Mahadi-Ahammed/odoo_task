@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vista_property_stage_tree" model="ir.ui.view">
+            <field name="name">property.stage.tree</field>
+            <field name="model">property.stage</field>
+            <field name="arch" type="xml">
+                <list string="Property Stage">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                    <field name="color"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_vista_property_stage_form" model="ir.ui.view">
+            <field name="name">property.stage.form</field>
+            <field name="model">property.stage</field>
+            <field name="arch" type="xml">
+                <form string="Property Stage">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="sequence"/>
+                            <field name="color"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_vista_property_stage" model="ir.actions.act_window">
+            <field name="name">Property Stage</field>
+            <field name="res_model">property.stage</field>
+            <field name="view_mode">list,form</field>
+            <field name="view_id" ref="view_vista_property_stage_tree"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a new Property Stage.
+                </p>
+                <p>
+                    This model is used to manage the different stages of properties in the system.
+                </p>
+            </field>
+        </record>
+
+        <record id="view_vista_property_stage_search" model="ir.ui.view">
+            <field name="name">property.stage.search</field>
+            <field name="model">property.stage</field>
+            <field name="arch" type="xml">
+                <search string="Property Stage">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

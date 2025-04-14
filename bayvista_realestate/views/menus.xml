@@ -1,0 +1,37 @@
+<odoo>
+
+    <!-- USER ACTION -->
+    <record id="action_bay_vista_user_list" model="ir.actions.act_window">
+        <field name="name">Users</field>
+        <field name="res_model">bay.vista.user</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="help" type="html">
+            <p>Create and manage users from here.</p>
+        </field>
+    </record>
+
+    <record id="action_bay_vista_property" model="ir.actions.act_window">
+        <field name="name">Properties</field>
+        <field name="res_model">bay.vista.property</field>
+        <field name="view_mode">kanban,list,form,activity</field>
+    </record>
+
+    <!-- ROOT MENU -->
+    <menuitem id="menu_bay_vista_root" name="Bay Vista" sequence="1"/>
+
+
+    <!-- USERS MENU (Admins Only) -->
+    <menuitem id="menu_bay_vista_users" 
+              name="Users" 
+              parent="menu_bay_vista_root" 
+              action="action_bay_vista_user_list"
+              sequence="30"/>
+
+    <menuitem id="menu_bay_vista_property" name="Properties" parent="menu_bay_vista_root" action="action_bay_vista_property"/>
+
+    <menuitem id="menu_vista_property_stage" 
+        name="Property Stage" 
+        parent="bayvista_realestate.menu_bay_vista_root" 
+        action="action_vista_property_stage" 
+        sequence="40"/>
+</odoo>
