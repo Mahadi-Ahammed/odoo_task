@@ -49,8 +49,20 @@
                             <div class="review-booking mt-5">
                                 <div class="row">
                                     <div class="col-6">
-                                        <button type="button" class="btn btn-primary booking-btn">
-                                            Booking</button>
+                                        <button
+                                            t-if="prop.property_for == 'sale' and prop.stage_id.name in ['New']"
+                                            type="button" class="btn btn-primary booking-btn"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#stageChangeModal">
+                                            <span t-if="prop.property_for == 'sale'"> Book </span>
+                                        </button>
+                                        <button
+                                            t-if="prop.property_for == 'rent' and prop.stage_id.name in ['New']"
+                                            type="button" class="btn btn-primary rent-btn"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#stageChangeModal">
+                                            <span t-if="prop.property_for == 'rent'"> Rent </span>
+                                        </button>
                                     </div>
                                     <div class="col-6 text-end">
                                         <button id="addReview" type="button"
@@ -89,11 +101,15 @@
                                                         class="review-profile-img"
                                                         alt="User Profile" />
                                                 </t>
-                                                <a t-att-href="'/bay_vista_user/%s' % review.property_user_id.id" class="review-username">
-                                                    <span class=""><t t-esc="review.property_user_id.name"/></span>
-                                                    
+                                                <a
+                                                    t-att-href="'/bay_vista_user/%s' % review.property_user_id.id"
+                                                    class="review-username">
+                                                    <span class="">
+                                                        <t t-esc="review.property_user_id.name" />
+                                                    </span>
+
                                                 </a>
-                                                
+
                                                 <span class="review-rating">
                                                     <t t-foreach="range(0,5)" t-as="i">
                                                         <i t-if="(i + 1 &lt;= review.rating)"
@@ -126,9 +142,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <!-- <input type="hidden" id="current_prop_user"
-                                        name="current_prop_user"
-                                        t-att-value="current_prop_user.id"/> -->
+
                                         <div class="star-rating mb-3">
                                             <i class="fa fa-star star" data-value="1"></i>
                                             <i class="fa fa-star star" data-value="2"></i>
@@ -154,6 +168,39 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="modal fade" id="stageChangeModal" tabindex="-1"
+                            aria-labelledby="stageChangeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="stageChangeModalLabel">Stage
+                                            Change</h5>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body"> Are you sure you want to <span
+                                            t-if="prop.property_for == 'rent'"> Rent </span> 
+                                        <span
+                                            t-if="prop.property_for == 'sale'"> Book </span> the
+                                        Property? </div>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">
+                                            Close</button>
+                                        <button type="button" id="StageChange"
+                                            t-att-data-curr_prop_id="prop.id"
+                                            t-att-data-curr_property_type="prop.property_for"
+                                            t-att-data-curr_prop_user="current_prop_user.id"
+                                            class="btn btn-primary">Change Stage</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Property Information (Right Column) -->
                         <div class="col-md-6">
                             <div class="property-info">
@@ -182,7 +229,56 @@
                                         <strong>Property For:</strong>
                                         <span t-esc="prop.property_for.capitalize()" />
                                     </li>
+                                    <li>
+                                        <strong>Current Stage:</strong>
+                                        <span t-esc="prop.stage_id.name" />
+                                    </li>
                                 </ul>
+
+                                <t t-if="prop.property_for == 'sale' and prop.offer_price">
+                                    <div class="offer-pricing mb-4 text-start">
+                                        <!-- Compute discount percentage if sale_price exists -->
+                                        <t t-set="discount"
+                                            t-value="round((prop.sale_price - prop.offer_price) * 100 / prop.sale_price) if prop.sale_price else 0" />
+                                        <div class="price-row">
+                                            <del class="sale-price">
+                                                <t t-esc="prop.currency_id.symbol" />
+                                                <t t-esc="prop.sale_price" />
+                                            </del>
+                                            <span class="offer-price ms-3">
+                                                <t t-esc="prop.currency_id.symbol" />
+                                                <t t-esc="prop.offer_price" />
+                                            </span>
+                                        </div>
+                                        <div class="offer-discount mt-2">
+                                            <span class="discount-label">Save </span>
+                                        <span
+                                                class="discount-percentage" t-esc="discount" />% </div>
+                                        <t t-if="prop.offer_price_date_expire_date">
+                                            <div class="offer-expiry text-muted mt-1"> till <t
+                                                    t-esc="prop.offer_price_date_expire_date.strftime('%B %d, %Y')" />
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+
+                                <t t-if="prop.property_for == 'rent'">
+                                    <div class="rent-pricing mb-4 text-start">
+                                        <div class="price-row">
+                                            <span class="rent-price"> Rent Price: <t
+                                                    t-esc="prop.currency_id.symbol" /> <t
+                                                    t-esc="prop.rent_price" />
+                                            </span>
+                                        </div>
+                                        <div class="price-row mt-2">
+                                            <span class="booking-price"> Booking Price: <t
+                                                    t-esc="prop.currency_id.symbol" /> <t
+                                                    t-esc="prop.booking_price" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </t>
+
 
                                 <h3>Facilities &amp; Features</h3>
                                 <p t-esc="prop.facilities" />
@@ -315,6 +411,78 @@
             </section>
 
 
+        </t>
+    </template>
+
+    <template id="property_stage_page" name="Property stages">
+        <t t-call="website.layout">
+            <section class="md-container property-stage-section py-5">
+                <div class="container">
+                    <h1 class="mb-4">Property Stages</h1>
+                    <div class="row">
+                        <t t-foreach="stages" t-as="stage">
+                            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                                <!-- Card clickable: Link to the stage detail page -->
+                                <a t-att-href="'/property/stage/' + str(stage.id)"
+                                    class="stage-card card h-100 text-decoration-none">
+                                    <div class="card-body">
+                                        <h4 class="card-title" t-esc="stage.name" />
+                                        <p class="card-text" t-esc="stage.description" />
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+
+
+        </t>
+    </template>
+    <template id="property_stage_detail_page" name="Property Stage Detail">
+        <t t-call="website.layout">
+            <section class="md-container property-stage-detail-section py-5">
+                <div class="container">
+                    <h1 class="mb-4">Properties in Stage: <t t-esc="stage.name" /></h1>
+                    <table t-if="properties" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Property Name</th>
+                                <th>Booked / Rented By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="properties" t-as="prop">
+                                <tr>
+                                    <td>
+                                        <a t-att-href="'/properties/details/' + str(prop.id)"
+                                            t-esc="prop.name" />
+                                    </td>
+                                    <td>
+                                        <t t-if="prop.property_for == 'sale' and prop.booked_by">
+                                            <a t-att-href="'/bay_vista_user/%s' % prop.booked_by.id">
+                                                    <span t-esc="prop.booked_by.name" />
+                                                </a>
+                                        </t>
+                                        <t t-if="prop.property_for == 'rent' and prop.rented_by">
+                                            <a t-att-href="'/bay_vista_user/%s' % prop.rented_by.id">
+                                                <span t-esc="prop.rented_by.name" />
+                                            </a>
+                                        </t>
+                                        <t
+                                            t-if="(prop.property_for == 'sale' and not prop.booked_by) or (prop.property_for == 'rent' and not prop.rented_by)">
+                                            <em>Not Assigned</em>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                    <div t-else="">
+                        No records are there for this stage 
+                    </div>
+                </div>
+            </section>
         </t>
     </template>
 </odoo>
