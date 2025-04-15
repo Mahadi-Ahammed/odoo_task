@@ -9,6 +9,12 @@
             <field name="sequence">3</field>
         </record>
 
+        <record id="website_property_stage_menu" model="website.menu">
+            <field name="name">Property Stage</field>
+            <field name="url">/property_stage</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence">4</field>
+        </record>
     </data>
 
 </odoo>
