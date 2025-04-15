@@ -7,6 +7,7 @@ var registry = publicWidget.registry;
 registry.AddReview = publicWidget.Widget.extend({
     selector: '.property-detail-section',
     events: {
+        "click #StageChange": "_onStageChange",
         "click #saveReview": "_onSaveReview",
         "click .star-rating .star": "_onStarClick",
     },
@@ -63,6 +64,34 @@ registry.AddReview = publicWidget.Widget.extend({
             
         }).catch((error) => {
             console.error("Error saving review:", error);
+        });
+    },
+
+    _onStageChange: function (ev) {
+        ev.preventDefault();
+    
+        let $button = this.$("#StageChange");
+        let propertyUserId = $button.data("curr_prop_user");
+        let propertyType = $button.data("curr_property_type");
+        let propertyId = $button.data("curr_prop_id");
+    
+        if (!propertyUserId) {
+            this.notification.add("User must need to be logged in as property user", { type: "warning" });
+            return;
+        }
+        rpc("/property/stage_change", {
+            property_id: propertyId,
+            property_type: propertyType,
+            property_user_id: propertyUserId,
+        }).then((result) => {
+            if (result.success) {
+                location.reload();
+            } else if (result.error) {
+                this.notification.add(result.error, { type: "warning" });
+            }
+        }).catch((error) => {
+            console.error("Error changing stage:", error);
+            this.notification.add("An error occurred while changing the property stage.", { type: "warning" });
         });
     },
 });
