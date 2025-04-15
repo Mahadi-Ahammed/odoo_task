@@ -58,7 +58,7 @@ ul.list-unstyled li {
     text-decoration: none;
     z-index: 10;
     cursor: pointer;
-    
+
     transition: none;
 }
 
@@ -86,8 +86,9 @@ ul.list-unstyled li {
         background: #fff;
         padding: 10px 15px;
         border-radius: 8px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         margin-bottom: 1rem;
+
         .average-rating-text {
             font-size: 1.2rem;
             color: #1A2B50;
@@ -95,21 +96,25 @@ ul.list-unstyled li {
         }
     }
 
-    .review-rating{
-        margin-left : .75rem;
+    .review-rating {
+        margin-left: .75rem;
     }
+
     .star-rating {
         .star {
             font-size: 1.5rem;
             cursor: pointer;
             margin-right: 0.2rem;
         }
+
         /* By default, set stars to muted (grey) */
         .star {
             color: #ccc;
         }
+
         .text-warning {
-            color: #ffc107 !important; /* Bootstrap warning color */
+            color: #ffc107 !important;
+            /* Bootstrap warning color */
         }
     }
 
@@ -236,7 +241,7 @@ ul.list-unstyled li {
         background: #fff;
         padding: 1.5rem;
         border-radius: 8px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
 
         h3 {
@@ -255,13 +260,169 @@ ul.list-unstyled li {
         text-align: center;
         margin-top: 1.5rem;
     }
+
     .modal-content {
         border-radius: 8px;
     }
-    
+
     #editProfileForm .form-control {
         margin-bottom: 1rem;
     }
-    
+
 }
 
+
+
+
+
+.offer-pricing {
+    background-color: #fff7f7;
+    border: 2px solid #e53935;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+
+    .price-row {
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .sale-price {
+        color: #080808;
+        font-size: 1.3rem;
+    }
+
+    .offer-price {
+        color: #e53935;
+        font-size: 1.6rem;
+        margin-left: 1rem;
+    }
+
+    .offer-discount {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #e53935;
+    }
+
+    .discount-label {
+        margin-right: 0.3rem;
+    }
+
+    .offer-expiry {
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 0.5rem;
+    }
+}
+
+.rent-pricing {
+    background-color: #fff7f7;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+
+    .price-row {
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .sale-price,
+    .rent-price,
+    .booking-price {
+        font-size: 1.3rem;
+        color: #999;
+    }
+
+
+    .rent-price {
+        color: #1A2B50;
+    }
+
+    .booking-price {
+        color: #e53935;
+    }
+
+    .offer-discount {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #e53935;
+    }
+
+    .offer-expiry {
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 0.5rem;
+    }
+}
+
+.property-stage-section {
+    .stage-card {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: box-shadow 0.3s ease;
+        color: inherit;
+
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1A2B50;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+    }
+}
+
+.property-stage-detail-section {
+    table {
+        width: 100%;
+        margin-top: 1rem;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #1A2B50;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        a {
+            color: #1A2B50;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
