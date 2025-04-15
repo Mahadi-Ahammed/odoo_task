@@ -5,3 +5,4 @@ from . import res_users
 from . import chatbot
 from . import mail_thread
 from . import vista_property_stage
+from . import property_review

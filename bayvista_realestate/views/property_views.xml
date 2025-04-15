@@ -117,6 +117,15 @@
                         <page string="Facilities and Features">
                             <field name="facilities"/>
                         </page>
+                        <page string="Property Reviews">
+                            <field name="review_ids">
+                                <list editable="bottom">
+                                    <field name="property_user_id"/>
+                                    <field name="comment"/>
+                                    <field name="rating"/>
+                                </list>
+                            </field>
+                        </page>
                     </notebook>
                 </sheet>
                 <chatter/>
@@ -181,5 +190,6 @@
             </list>
         </field>
     </record>
+
 
 </odoo>

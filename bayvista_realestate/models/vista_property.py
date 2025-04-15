@@ -20,6 +20,7 @@ class Property(models.Model):
     image_ids = fields.One2many('property.image', 'property_id', string="Property Images")
     facilities = fields.Text(string="Facilities & Features")
     property_image = fields.Binary(string="Property Picture")
+    review_ids = fields.One2many('property.review', 'property_id', string="Property Reviews")
     
     # Address details
     street = fields.Char(string="Street")

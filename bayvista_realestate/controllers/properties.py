@@ -98,8 +98,36 @@ class PropertiesController(http.Controller):
                     })
             images_ids.append(attachment.id if attachment else False)
 
+        current_prop_user = request.env['bay.vista.user'].sudo().search([
+            ('odoo_user_id', '=', request.env.user.id)
+        ], limit=1)
+        
+        reviews = prop.sudo().review_ids
         values = {
             'prop': prop,
             'images': images_ids,
+            'current_prop_user': current_prop_user,
+            'reviews' : reviews,
         }
         return request.render('bayvista_realestate.property_details', values)
+    
+    
+    @http.route('/property/submit_review', type='json', auth='user', methods=['POST'])
+    def submit_review(self, **post):
+        property_id = post.get('property_id')
+        property_user_id = post.get('property_user_id')
+        comment = post.get('comment')
+        rating = post.get('rating', 0)
+        
+        if not (property_id and property_user_id and comment):
+            return {"error": "Missing required fields."}
+        
+        # Create the review record in the property.review model
+        review = request.env['property.review'].sudo().create({
+            'property_id': int(property_id),
+            'property_user_id': int(property_user_id),
+            'comment': comment,
+            'rating': int(rating),
+        })
+        
+        return {"success": True, "review_id": review.id}

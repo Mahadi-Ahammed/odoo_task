@@ -1,6 +1,7 @@
 id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
 access_bay_vista_property,Bay Vista Property,model_bay_vista_property,,1,1,1,1
 access_property_image,Property Image,model_property_image,,1,1,1,1
+access_property_review,Property Review,model_property_review,,1,1,1,1
 access_buyer,bay.vista.user.buyer,model_bay_vista_user,,1,0,0,0
 access_admin,bay.vista.user.admin,model_bay_vista_user,,1,1,1,1
 access_admin_property_stage,property.stage.user.admin,model_property_stage,,1,1,1,1

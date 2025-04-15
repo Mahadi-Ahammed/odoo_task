@@ -7,4 +7,5 @@
 ##############################################################################
 
 from . import properties
+from . import property_user
 

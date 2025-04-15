@@ -24,6 +24,8 @@
         'web.assets_frontend': [
             'bayvista_realestate/static/src/scss/website_view.scss',
             'bayvista_realestate/static/src/js/image_slider.js',
+            'bayvista_realestate/static/src/js/property_details.js',
+            'bayvista_realestate/static/src/js/user_profile.js',
         ],
         
         'web.assets_backend': [
