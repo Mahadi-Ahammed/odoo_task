@@ -131,3 +131,61 @@ class PropertiesController(http.Controller):
         })
         
         return {"success": True, "review_id": review.id}
+
+    @http.route('/property_stage', type='http', auth="user", website=True)
+    def property_stage(self, **kwargs):
+        
+        stages = request.env['property.stage'].sudo().search([])
+        return request.render('bayvista_realestate.property_stage_page', {
+            'stages': stages,
+        })
+        
+    @http.route('/property/stage_change', type='json', auth='user', methods=['POST'])
+    def property_stage_change(self, **post):
+        property_id = post.get('property_id')
+        property_type = post.get('property_type')
+        property_user_id = post.get('property_user_id')
+        
+        if not (property_id and property_type and property_user_id):
+            return {"error": "Missing required parameters."}
+        
+        # Convert IDs to integers
+        property_id = int(property_id)
+        property_user_id = int(property_user_id)
+        
+        # Determine the target stage name based on property type
+        if property_type == 'rent':
+            target_stage_name = 'Rented'
+        elif property_type == 'sale':
+            target_stage_name = 'Booked'
+        else:
+            return {"error": "Invalid property type."}
+        
+        
+        stage = request.env['property.stage'].sudo().search([('name', '=', target_stage_name)], limit=1)
+        if not stage:
+            return {"error": f"Stage '{target_stage_name}' not found."}
+        
+        prop_rec = request.env['bay.vista.property'].sudo().browse(property_id)
+        if not prop_rec:
+            return {"error": "Property not found."}
+        
+        # Prepare the values to update in the property record:
+        # Set the stage_id to the found stage.
+        update_vals = {'stage_id': stage.id}
+        if property_type == 'rent':
+            update_vals['rented_by'] = property_user_id
+        elif property_type == 'sale':
+            update_vals['booked_by'] = property_user_id
+        
+        prop_rec.sudo().write(update_vals)
+        return {"success": True}
+    
+    @http.route('/property/stage/<model("property.stage"):stage>', type='http', auth="user", website=True)
+    def property_stage_detail(self, stage, **kwargs):
+        # Search for all property records having stage_id equal to the given stage.
+        properties = request.env['bay.vista.property'].sudo().search([('stage_id', '=', stage.id)])
+        return request.render('bayvista_realestate.property_stage_detail_page', {
+            'stage': stage,
+            'properties': properties,
+        })
