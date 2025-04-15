@@ -42,6 +42,9 @@ class Property(models.Model):
     rent_price = fields.Float(string="Rent Price")
     booking_price = fields.Float(string="Booking Price")
 
+    booked_by = fields.Many2one('bay.vista.user', "Booked By")
+    rented_by = fields.Many2one('bay.vista.user', "Rented By")
+
     @api.depends('offer', 'sale_price')
     def _compute_offer_price(self):
         """ Compute the offer price based on the sale price and offer percentage """
