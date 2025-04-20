@@ -9,4 +9,5 @@
 from . import properties
 from . import property_user
 from . import thread
+from . import homepage
 
