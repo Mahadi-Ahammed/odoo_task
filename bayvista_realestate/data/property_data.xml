@@ -8,17 +8,18 @@
       <field name="square_feet">3313.5</field>
       <field name="property_for">rent</field>
       <field name="facilities">Line, Beyond, Its, Particularly</field>
-      <field name="street">Jonathan Pass</field>
-      <field name="city">Changchester</field>
-      <field name="zip_code">27302</field>
+      <field name="street">47 W 13th St</field>
+      <field name="city"> New York</field>
+      <field name="zip_code">10011</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2144.48</field>
       <field name="booking_price">3979.81</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-17</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/1.jpg"/>
     </record>
     <record id="property_2" model="bay.vista.property">
       <field name="name">Davis Group</field>
@@ -28,17 +29,18 @@
       <field name="square_feet">2634.22</field>
       <field name="property_for">sale</field>
       <field name="facilities">Language, Ball, Floor, Meet</field>
-      <field name="street">Brown Plaza</field>
-      <field name="city">Ramoshaven</field>
-      <field name="zip_code">64632</field>
+      <field name="street">20 Cooper Square</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">365844.84</field>
       <field name="rent_price">0</field>
       <field name="booking_price">3882.13</field>
       <field name="offer">25</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-14</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/2.jpg"/>
     </record>
     <record id="property_3" model="bay.vista.property">
       <field name="name">Maynard PLC</field>
@@ -48,17 +50,18 @@
       <field name="square_feet">3059.41</field>
       <field name="property_for">sale</field>
       <field name="facilities">Successful, Together, Type, Music</field>
-      <field name="street">Olsen Plains</field>
-      <field name="city">West Andreaville</field>
-      <field name="zip_code">51788</field>
+      <field name="street">1 E 2nd St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">682859.43</field>
       <field name="rent_price">0</field>
       <field name="booking_price">3972.32</field>
       <field name="offer">20</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-05-19</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/3.jpg"/>
     </record>
     <record id="property_4" model="bay.vista.property">
       <field name="name">Riley-Hayes</field>
@@ -68,17 +71,18 @@
       <field name="square_feet">2271.07</field>
       <field name="property_for">sale</field>
       <field name="facilities">Situation, Talk, Despite, Stage</field>
-      <field name="street">Patty Radial</field>
-      <field name="city">Aimeebury</field>
-      <field name="zip_code">83627</field>
+      <field name="street">75 3rd Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">574017.92</field>
       <field name="rent_price">0</field>
       <field name="booking_price">598.38</field>
       <field name="offer">36</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-03</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/4.jpg"/>
     </record>
     <record id="property_5" model="bay.vista.property">
       <field name="name">Johnson Inc</field>
@@ -88,17 +92,18 @@
       <field name="square_feet">2599.6</field>
       <field name="property_for">rent</field>
       <field name="facilities">Positive, Go, Congress, Mean</field>
-      <field name="street">Peter Land</field>
-      <field name="city">North Davidborough</field>
-      <field name="zip_code">05662</field>
+      <field name="street">Metrotech Center</field>
+      <field name="city">Brooklyn</field>
+      <field name="zip_code">11201</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2072.37</field>
       <field name="booking_price">1078.14</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-07-08</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/5.jpg"/>
     </record>
     <record id="property_6" model="bay.vista.property">
       <field name="name">Massey-Sellers</field>
@@ -108,17 +113,18 @@
       <field name="square_feet">2529.21</field>
       <field name="property_for">sale</field>
       <field name="facilities">True, Power, Home, Price</field>
-      <field name="street">Howard Street</field>
-      <field name="city">Lake Vanessaborough</field>
-      <field name="zip_code">20609</field>
+      <field name="street">721 Broadway</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">502340.22</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4917.54</field>
       <field name="offer">10</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-07-02</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/6.jpg"/>
     </record>
     <record id="property_7" model="bay.vista.property">
       <field name="name">Gill Group</field>
@@ -128,17 +134,18 @@
       <field name="square_feet">3063.26</field>
       <field name="property_for">sale</field>
       <field name="facilities">Large, Report, Purpose, Themselves</field>
-      <field name="street">Amy Dale</field>
-      <field name="city">South Judithmouth</field>
-      <field name="zip_code">04635</field>
+      <field name="street">40 E 7th St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">223074.25</field>
       <field name="rent_price">0</field>
       <field name="booking_price">1860.43</field>
       <field name="offer">10</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-02</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/7.jpg"/>
     </record>
     <record id="property_8" model="bay.vista.property">
       <field name="name">Martin Inc</field>
@@ -148,17 +155,18 @@
       <field name="square_feet">3882.05</field>
       <field name="property_for">sale</field>
       <field name="facilities">Nature, White, Without, Study</field>
-      <field name="street">Barton Station</field>
-      <field name="city">Savageshire</field>
-      <field name="zip_code">17608</field>
+      <field name="street">838 Broadway</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">306326.13</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4154.02</field>
       <field name="offer">10</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-06</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/8.jpg"/>
     </record>
     <record id="property_9" model="bay.vista.property">
       <field name="name">Fischer, Baird and Lowe</field>
@@ -168,17 +176,18 @@
       <field name="square_feet">1605.08</field>
       <field name="property_for">rent</field>
       <field name="facilities">Technology, Card, Minute, Practice</field>
-      <field name="street">Smith Bridge</field>
-      <field name="city">South Stefaniechester</field>
-      <field name="zip_code">45989</field>
+      <field name="street">69 W 9th St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10011</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3417.9</field>
       <field name="booking_price">3654.4</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-07-19</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/9.jpg"/>
     </record>
     <record id="property_10" model="bay.vista.property">
       <field name="name">Grant-Potts</field>
@@ -188,17 +197,18 @@
       <field name="square_feet">2897.38</field>
       <field name="property_for">sale</field>
       <field name="facilities">Pretty, Republican, Total, Policy</field>
-      <field name="street">Billy Springs</field>
-      <field name="city">Port Erictown</field>
-      <field name="zip_code">49318</field>
+      <field name="street">19 Washington Square N</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10011</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">354305.31</field>
       <field name="rent_price">0</field>
       <field name="booking_price">3571.15</field>
       <field name="offer">32</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-05-29</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/10.jpg"/>
     </record>
     <record id="property_11" model="bay.vista.property">
       <field name="name">Cook-Clarke</field>
@@ -208,17 +218,18 @@
       <field name="square_feet">1563.45</field>
       <field name="property_for">sale</field>
       <field name="facilities">Film, Tax, Rock, Few</field>
-      <field name="street">Smith Drive</field>
-      <field name="city">East Nicholas</field>
-      <field name="zip_code">43560</field>
+      <field name="street">371 7th Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10001</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">359201.34</field>
       <field name="rent_price">0</field>
       <field name="booking_price">998.9</field>
       <field name="offer">31</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-05-06</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/11.jpg"/>
     </record>
     <record id="property_12" model="bay.vista.property">
       <field name="name">Martinez-Wilson</field>
@@ -228,17 +239,18 @@
       <field name="square_feet">1549.53</field>
       <field name="property_for">sale</field>
       <field name="facilities">His, Better, News, Face</field>
-      <field name="street">Wells Ville</field>
-      <field name="city">Robertville</field>
-      <field name="zip_code">64545</field>
+      <field name="street">33 3rd Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">342665.93</field>
       <field name="rent_price">0</field>
       <field name="booking_price">2414.19</field>
       <field name="offer">31</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-05-20</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/12.jpg"/>
     </record>
     <record id="property_13" model="bay.vista.property">
       <field name="name">Waters, Reynolds and Howard</field>
@@ -248,17 +260,18 @@
       <field name="square_feet">691.11</field>
       <field name="property_for">rent</field>
       <field name="facilities">Her, National, Character, Writer</field>
-      <field name="street">Vanessa Green</field>
-      <field name="city">South Christopher</field>
-      <field name="zip_code">64451</field>
+      <field name="street">70 Washington Square South</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2271.64</field>
       <field name="booking_price">4077.59</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-08</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/13.jpg"/>
     </record>
     <record id="property_14" model="bay.vista.property">
       <field name="name">Stark, Morris and Jimenez</field>
@@ -268,17 +281,18 @@
       <field name="square_feet">3026.87</field>
       <field name="property_for">sale</field>
       <field name="facilities">Owner, Choose, Here, Family</field>
-      <field name="street">Rich Park</field>
-      <field name="city">New Richard</field>
-      <field name="zip_code">93086</field>
+      <field name="street">55 East 10th Street</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">292510.66</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4829.4</field>
       <field name="offer">27</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-05-07</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/14.jpg"/>
     </record>
     <record id="property_15" model="bay.vista.property">
       <field name="name">Turner Group</field>
@@ -288,17 +302,18 @@
       <field name="square_feet">2000.91</field>
       <field name="property_for">sale</field>
       <field name="facilities">Individual, Win, Suddenly, Win</field>
-      <field name="street">Carl Curve</field>
-      <field name="city">Jonesland</field>
-      <field name="zip_code">80118</field>
+      <field name="street">400 Broome St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10013</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">470108.68</field>
       <field name="rent_price">0</field>
       <field name="booking_price">2318.12</field>
       <field name="offer">39</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-23</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/15.jpg"/>
     </record>
     <record id="property_16" model="bay.vista.property">
       <field name="name">White, Hunter and Scott</field>
@@ -308,17 +323,18 @@
       <field name="square_feet">881.51</field>
       <field name="property_for">rent</field>
       <field name="facilities">Bank, Recognize, Special, Good</field>
-      <field name="street">Diane Alley</field>
-      <field name="city">Port Michelle</field>
-      <field name="zip_code">05112</field>
+      <field name="street">29 Washington Pl</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3402.6</field>
       <field name="booking_price">3347.12</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-06-17</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/16.jpg"/>
     </record>
     <record id="property_17" model="bay.vista.property">
       <field name="name">Johnson PLC</field>
@@ -328,17 +344,18 @@
       <field name="square_feet">984.56</field>
       <field name="property_for">sale</field>
       <field name="facilities">True, Their, Race, Special</field>
-      <field name="street">Thomas Drive</field>
-      <field name="city">Hugheston</field>
-      <field name="zip_code">68528</field>
+      <field name="street">36 East 8th Street</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">887789.15</field>
       <field name="rent_price">0</field>
       <field name="booking_price">2930.85</field>
       <field name="offer">861621.15</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
       <field name="offer_price_date_expire_date">2025-05-26</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/17.jpg"/>
     </record>
     <record id="property_18" model="bay.vista.property">
       <field name="name">Kelly-Chen</field>
@@ -348,17 +365,18 @@
       <field name="square_feet">2198.3</field>
       <field name="property_for">sale</field>
       <field name="facilities">Project, Occur, Democratic, Behavior</field>
-      <field name="street">Watson Field</field>
-      <field name="city">North Kimberly</field>
-      <field name="zip_code">82739</field>
+      <field name="street">25 Union Square W</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">507381.96</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4998.24</field>
       <field name="offer">45</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-07-18</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/18.jpg"/>
     </record>
     <record id="property_19" model="bay.vista.property">
       <field name="name">Livingston-Walls</field>
@@ -368,17 +386,18 @@
       <field name="square_feet">895.49</field>
       <field name="property_for">rent</field>
       <field name="facilities">Grow, Ahead, Girl, Act</field>
-      <field name="street">Ronald Port</field>
-      <field name="city">Hunterville</field>
-      <field name="zip_code">30712</field>
+      <field name="street">55 Clark St</field>
+      <field name="city">Brooklyn</field>
+      <field name="zip_code">11201</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2997.2</field>
       <field name="booking_price">821.35</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-06-05</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/19.jpg"/>
     </record>
     <record id="property_20" model="bay.vista.property">
       <field name="name">Dennis, Santana and Adkins</field>
@@ -388,17 +407,18 @@
       <field name="square_feet">1258.14</field>
       <field name="property_for">rent</field>
       <field name="facilities">Which, Fast, There, Network</field>
-      <field name="street">Aaron Shoals</field>
-      <field name="city">Chadberg</field>
-      <field name="zip_code">43359</field>
+      <field name="street">181 Mercer Street</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3169.57</field>
       <field name="booking_price">3990.7</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-07-16</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/20.jpg"/>
     </record>
     <record id="property_21" model="bay.vista.property">
       <field name="name">Bennett and Sons</field>
@@ -408,17 +428,18 @@
       <field name="square_feet">2283.84</field>
       <field name="property_for">rent</field>
       <field name="facilities">Senior, Fact, Information, Animal</field>
-      <field name="street">Amanda Inlet</field>
-      <field name="city">New Victoria</field>
-      <field name="zip_code">17833</field>
+      <field name="street">345 E 24th St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10010</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2119.02</field>
       <field name="booking_price">3224.62</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-05-16</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/21.jpg"/>
     </record>
     <record id="property_22" model="bay.vista.property">
       <field name="name">Yang-Thomas</field>
@@ -428,17 +449,18 @@
       <field name="square_feet">784.5</field>
       <field name="property_for">sale</field>
       <field name="facilities">Everybody, Newspaper, Read, Somebody</field>
-      <field name="street">Robert Plaza</field>
-      <field name="city">South Christianland</field>
-      <field name="zip_code">58980</field>
+      <field name="street">242 Greene St</field>
+      <field name="city"> New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">538124.1</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4499.09</field>
       <field name="offer">12</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-07-13</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/22.jpg"/>
     </record>
     <record id="property_23" model="bay.vista.property">
       <field name="name">Giles-Thomas</field>
@@ -448,17 +470,18 @@
       <field name="square_feet">3172.11</field>
       <field name="property_for">rent</field>
       <field name="facilities">Interest, Seem, Begin, Marriage</field>
-      <field name="street">Thompson Motorway</field>
-      <field name="city">Lopezchester</field>
-      <field name="zip_code">30957</field>
+      <field name="street">East 14th Street</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2803.36</field>
       <field name="booking_price">1466.08</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-07-05</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/23.jpg"/>
     </record>
     <record id="property_24" model="bay.vista.property">
       <field name="name">Smith Group</field>
@@ -468,17 +491,18 @@
       <field name="square_feet">2434.31</field>
       <field name="property_for">rent</field>
       <field name="facilities">Attention, Team, Executive, Care</field>
-      <field name="street">Joseph Skyway</field>
-      <field name="city">Ramireztown</field>
-      <field name="zip_code">69059</field>
+      <field name="street">110 W 3rd St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2970.44</field>
       <field name="booking_price">2623.35</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-06-30</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/24.jpg"/>
     </record>
     <record id="property_25" model="bay.vista.property">
       <field name="name">Carter-Watson</field>
@@ -488,17 +512,18 @@
       <field name="square_feet">2934.74</field>
       <field name="property_for">sale</field>
       <field name="facilities">Reason, Five, Present, Art</field>
-      <field name="street">Figueroa Turnpike</field>
-      <field name="city">New Daniel</field>
-      <field name="zip_code">39846</field>
+      <field name="street">239 Greene St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">862117.06</field>
       <field name="rent_price">0</field>
       <field name="booking_price">2606.89</field>
       <field name="offer">8</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
       <field name="offer_price_date_expire_date">2025-05-22</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/25.jpg"/>
     </record>
     <record id="property_26" model="bay.vista.property">
       <field name="name">Oneal-Smith</field>
@@ -508,17 +533,18 @@
       <field name="square_feet">2595.52</field>
       <field name="property_for">sale</field>
       <field name="facilities">Seem, Explain, Black, Leave</field>
-      <field name="street">Anthony Mountains</field>
-      <field name="city">Lake Tyler</field>
-      <field name="zip_code">43780</field>
+      <field name="street">13 Washington Square S</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">339845.33</field>
       <field name="rent_price">0</field>
       <field name="booking_price">3045.6</field>
       <field name="offer">20</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-07-12</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/26.jpg"/>
     </record>
     <record id="property_27" model="bay.vista.property">
       <field name="name">Warren and Sons</field>
@@ -528,17 +554,18 @@
       <field name="square_feet">3504.94</field>
       <field name="property_for">sale</field>
       <field name="facilities">Town, Almost, Plan, That</field>
-      <field name="street">Hernandez Station</field>
-      <field name="city">Jacksonchester</field>
-      <field name="zip_code">48160</field>
+      <field name="street">5 Washington Square S</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">495146.07</field>
       <field name="rent_price">0</field>
       <field name="booking_price">993.77</field>
       <field name="offer">39</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-06-08</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/27.jpg"/>
     </record>
     <record id="property_28" model="bay.vista.property">
       <field name="name">Bush PLC</field>
@@ -548,17 +575,18 @@
       <field name="square_feet">748.15</field>
       <field name="property_for">rent</field>
       <field name="facilities">Face, According, As, Into</field>
-      <field name="street">Cheryl Ridge</field>
-      <field name="city">Lake Danielleburgh</field>
-      <field name="zip_code">29620</field>
+      <field name="street">120 E 12th St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3609.27</field>
       <field name="booking_price">2370.75</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-06-30</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/28.jpg"/>
     </record>
     <record id="property_29" model="bay.vista.property">
       <field name="name">Obrien Inc</field>
@@ -568,17 +596,18 @@
       <field name="square_feet">2304.8</field>
       <field name="property_for">sale</field>
       <field name="facilities">Save, Fine, Team, Effort</field>
-      <field name="street">Lee Rest</field>
-      <field name="city">Grantbury</field>
-      <field name="zip_code">45581</field>
+      <field name="street">249 Sullivan St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">175097.7</field>
       <field name="rent_price">0</field>
       <field name="booking_price">2769.35</field>
       <field name="offer">16</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-05-23</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/29.jpg"/>
     </record>
     <record id="property_30" model="bay.vista.property">
       <field name="name">Kim, Stark and Jenkins</field>
@@ -588,17 +617,18 @@
       <field name="square_feet">1502.11</field>
       <field name="property_for">rent</field>
       <field name="facilities">Campaign, That, Various, Floor</field>
-      <field name="street">Albert Park</field>
-      <field name="city">North Kevin</field>
-      <field name="zip_code">57496</field>
+      <field name="street">715 Broadway</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2342.97</field>
       <field name="booking_price">2707.49</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-07-18</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/30.jpg"/>
     </record>
     <record id="property_31" model="bay.vista.property">
       <field name="name">Palmer-Murray</field>
@@ -608,17 +638,18 @@
       <field name="square_feet">1269.49</field>
       <field name="property_for">sale</field>
       <field name="facilities">Grow, Push, Region, Produce</field>
-      <field name="street">Jennifer Tunnel</field>
-      <field name="city">New Rachelside</field>
-      <field name="zip_code">29541</field>
+      <field name="street">1 Washington Mews</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">483093.3</field>
       <field name="rent_price">0</field>
       <field name="booking_price">1757.8</field>
       <field name="offer">25</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-06-02</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/31.jpg"/>
     </record>
     <record id="property_32" model="bay.vista.property">
       <field name="name">Mitchell-Jackson</field>
@@ -628,17 +659,18 @@
       <field name="square_feet">3413.16</field>
       <field name="property_for">rent</field>
       <field name="facilities">Government, Opportunity, Pick, Too</field>
-      <field name="street">Hall Road</field>
-      <field name="city">North April</field>
-      <field name="zip_code">14658</field>
+      <field name="street">80 Washington Square E</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3165.51</field>
       <field name="booking_price">3329.53</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-05-16</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/32.jpg"/>
     </record>
     <record id="property_33" model="bay.vista.property">
       <field name="name">Delgado, Guerrero and Simpson</field>
@@ -648,17 +680,18 @@
       <field name="square_feet">2433.07</field>
       <field name="property_for">rent</field>
       <field name="facilities">Else, Page, Region, Start</field>
-      <field name="street">Parker Forges</field>
-      <field name="city">New Caitlinfort</field>
-      <field name="zip_code">38738</field>
+      <field name="street">310 3rd Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10010</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3477.92</field>
       <field name="booking_price">3669.35</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-07-09</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/33.jpg"/>
     </record>
     <record id="property_34" model="bay.vista.property">
       <field name="name">Cooper Group</field>
@@ -668,17 +701,18 @@
       <field name="square_feet">1612.78</field>
       <field name="property_for">rent</field>
       <field name="facilities">Drop, Actually, Watch, Force</field>
-      <field name="street">Leslie Summit</field>
-      <field name="city">Acevedoborough</field>
-      <field name="zip_code">08680</field>
+      <field name="street">636 Greenwich St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10014</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2618.11</field>
       <field name="booking_price">4167.99</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-06-06</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/34.jpg"/>
     </record>
     <record id="property_35" model="bay.vista.property">
       <field name="name">Graham-Howard</field>
@@ -688,17 +722,18 @@
       <field name="square_feet">1240.12</field>
       <field name="property_for">rent</field>
       <field name="facilities">Perform, Product, Style, Record</field>
-      <field name="street">Patricia Forge</field>
-      <field name="city">Teresachester</field>
-      <field name="zip_code">10940</field>
+      <field name="street">726 Broadway</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">3065.85</field>
       <field name="booking_price">1205.02</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-07-15</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/35.jpg"/>
     </record>
     <record id="property_36" model="bay.vista.property">
       <field name="name">Newton Ltd</field>
@@ -708,17 +743,18 @@
       <field name="square_feet">1041.4</field>
       <field name="property_for">rent</field>
       <field name="facilities">Many, Group, Public, Leader</field>
-      <field name="street">Sonya Valley</field>
-      <field name="city">Johnburgh</field>
-      <field name="zip_code">67011</field>
+      <field name="street">44 W 4th St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">2294.95</field>
       <field name="booking_price">4613.93</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-06-03</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/36.jpg"/>
     </record>
     <record id="property_37" model="bay.vista.property">
       <field name="name">Smith-Moreno</field>
@@ -728,17 +764,18 @@
       <field name="square_feet">2317.32</field>
       <field name="property_for">rent</field>
       <field name="facilities">Old, Simply, Face, Rather</field>
-      <field name="street">Nelson Park</field>
-      <field name="city">Francisfurt</field>
-      <field name="zip_code">27645</field>
+      <field name="street">50 Washington Square S</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1653.07</field>
       <field name="booking_price">4225.57</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
       <field name="offer_price_date_expire_date">2025-07-13</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/37.jpg"/>
     </record>
     <record id="property_38" model="bay.vista.property">
       <field name="name">Willis Ltd</field>
@@ -748,17 +785,18 @@
       <field name="square_feet">3310.22</field>
       <field name="property_for">rent</field>
       <field name="facilities">Notice, Kind, Game, Act</field>
-      <field name="street">Darren Isle</field>
-      <field name="city">Paulview</field>
-      <field name="zip_code">95085</field>
+      <field name="street">246 Greene St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">818.24</field>
       <field name="booking_price">3877.49</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-07-07</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/38.jpg"/>
     </record>
     <record id="property_39" model="bay.vista.property">
       <field name="name">Dodson-Thompson</field>
@@ -768,17 +806,18 @@
       <field name="square_feet">1273.25</field>
       <field name="property_for">sale</field>
       <field name="facilities">Watch, Mrs, Never, Wrong</field>
-      <field name="street">Chad Manors</field>
-      <field name="city">Browningview</field>
-      <field name="zip_code">25403</field>
+      <field name="street">16 Washington Mews</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">341531.35</field>
       <field name="rent_price">0</field>
       <field name="booking_price">3566.92</field>
       <field name="offer">31</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-05-10</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/39.jpg"/>
     </record>
     <record id="property_40" model="bay.vista.property">
       <field name="name">Cruz, Marshall and Johnson</field>
@@ -788,17 +827,18 @@
       <field name="square_feet">1160.48</field>
       <field name="property_for">rent</field>
       <field name="facilities">Market, Room, Eat, Through</field>
-      <field name="street">Kristen Squares</field>
-      <field name="city">Moodytown</field>
-      <field name="zip_code">36476</field>
+      <field name="street">80 Lafayette St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10013</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1033.63</field>
       <field name="booking_price">1539.59</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-07-19</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/40.jpg"/>
     </record>
     <record id="property_41" model="bay.vista.property">
       <field name="name">Reeves, Shields and Jacobson</field>
@@ -808,17 +848,18 @@
       <field name="square_feet">1515.36</field>
       <field name="property_for">rent</field>
       <field name="facilities">Action, Economy, Several, Hit</field>
-      <field name="street">Ashley Freeway</field>
-      <field name="city">Port Sara</field>
-      <field name="zip_code">83780</field>
+      <field name="street">550 1st Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10016</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1485.63</field>
       <field name="booking_price">2729.8</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-05-27</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/41.jpg"/>
     </record>
     <record id="property_42" model="bay.vista.property">
       <field name="name">Elliott LLC</field>
@@ -828,17 +869,18 @@
       <field name="square_feet">957.93</field>
       <field name="property_for">rent</field>
       <field name="facilities">Music, Amount, Up, Suddenly</field>
-      <field name="street">Gomez Port</field>
-      <field name="city">Terryton</field>
-      <field name="zip_code">03828</field>
+      <field name="street">33 Washington Square W</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10011</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1473.44</field>
       <field name="booking_price">516.48</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-05-11</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/42.jpg"/>
     </record>
     <record id="property_43" model="bay.vista.property">
       <field name="name">Hernandez, Delacruz and Dixon</field>
@@ -848,17 +890,18 @@
       <field name="square_feet">3019.45</field>
       <field name="property_for">rent</field>
       <field name="facilities">Red, Effect, Else, Very</field>
-      <field name="street">Russell Divide</field>
-      <field name="city">Philipberg</field>
-      <field name="zip_code">20843</field>
+      <field name="street">240 Mercer St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1659.18</field>
       <field name="booking_price">3569.34</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-07-04</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/43.jpg"/>
     </record>
     <record id="property_44" model="bay.vista.property">
       <field name="name">Meyers-Jones</field>
@@ -868,17 +911,18 @@
       <field name="square_feet">3820.67</field>
       <field name="property_for">sale</field>
       <field name="facilities">Billion, Parent, Now, From</field>
-      <field name="street">Darlene Bypass</field>
-      <field name="city">Tranton</field>
-      <field name="zip_code">50054</field>
+      <field name="street">101 Johnson St</field>
+      <field name="city">Brooklyn</field>
+      <field name="zip_code">11201</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">185751.9</field>
       <field name="rent_price">0</field>
       <field name="booking_price">1071.88</field>
       <field name="offer">17</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-05-12</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/44.jpg"/>
     </record>
     <record id="property_45" model="bay.vista.property">
       <field name="name">Gross Inc</field>
@@ -888,17 +932,18 @@
       <field name="square_feet">3168.86</field>
       <field name="property_for">rent</field>
       <field name="facilities">Eight, Finally, Support, Law</field>
-      <field name="street">Logan Brooks</field>
-      <field name="city">Vanessaville</field>
-      <field name="zip_code">24181</field>
+      <field name="street">433 1st Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10010</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1007.58</field>
       <field name="booking_price">2932.48</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-07-06</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/45.jpg"/>
     </record>
     <record id="property_46" model="bay.vista.property">
       <field name="name">Johnson Inc</field>
@@ -908,17 +953,18 @@
       <field name="square_feet">2293.63</field>
       <field name="property_for">rent</field>
       <field name="facilities">Believe, Step, Four, Western</field>
-      <field name="street">Brown Court</field>
-      <field name="city">South Leahborough</field>
-      <field name="zip_code">62286</field>
+      <field name="street">50 W 4th St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10012</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">0</field>
       <field name="rent_price">1097.93</field>
       <field name="booking_price">4958.25</field>
       <field name="offer">0</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-05-10</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/46.jpg"/>
     </record>
     <record id="property_47" model="bay.vista.property">
       <field name="name">Blackburn Ltd</field>
@@ -928,17 +974,18 @@
       <field name="square_feet">2616.07</field>
       <field name="property_for">sale</field>
       <field name="facilities">There, Leg, Theory, Case</field>
-      <field name="street">Aaron Junction</field>
-      <field name="city">East Reginaport</field>
-      <field name="zip_code">74545</field>
+      <field name="street">100 Bleecker St</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10013</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">481299.39</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4605.98</field>
       <field name="offer">16</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-05-03</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/47.jpg"/>
     </record>
     <record id="property_48" model="bay.vista.property">
       <field name="name">Smith LLC</field>
@@ -948,17 +995,18 @@
       <field name="square_feet">3877.48</field>
       <field name="property_for">sale</field>
       <field name="facilities">Hair, Describe, Hundred, Candidate</field>
-      <field name="street">Higgins Extensions</field>
-      <field name="city">East Sarahtown</field>
-      <field name="zip_code">74702</field>
+      <field name="street">238 1st Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10009</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">879757.46</field>
       <field name="rent_price">0</field>
       <field name="booking_price">3251.56</field>
       <field name="offer">20</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-07-02</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/48.jpg"/>
     </record>
     <record id="property_49" model="bay.vista.property">
       <field name="name">Hendricks and Sons</field>
@@ -968,17 +1016,18 @@
       <field name="square_feet">2280.69</field>
       <field name="property_for">sale</field>
       <field name="facilities">There, Any, Require, Agree</field>
-      <field name="street">Sanchez Light</field>
-      <field name="city">Tammychester</field>
-      <field name="zip_code">55688</field>
+      <field name="street">339 1st Ave</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10003</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">660153.0</field>
       <field name="rent_price">0</field>
       <field name="booking_price">503.16</field>
       <field name="offer">27</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-06-03</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/49.jpg"/>
     </record>
     <record id="property_50" model="bay.vista.property">
       <field name="name">Peterson Group</field>
@@ -988,17 +1037,18 @@
       <field name="square_feet">1087.96</field>
       <field name="property_for">sale</field>
       <field name="facilities">Play, Fact, Issue, Radio</field>
-      <field name="street">Munoz Estates</field>
-      <field name="city">Hamiltonville</field>
-      <field name="zip_code">35768</field>
+      <field name="street">22 Washington Square N</field>
+      <field name="city">New York</field>
+      <field name="zip_code">10011</field>
       <field name="country_id" ref="base.us"/>
-      <field name="state_id" ref="base.state_us_10"/>
+      <field name="state_id" ref="base.state_us_27"/>
       <field name="sale_price">636371.91</field>
       <field name="rent_price">0</field>
       <field name="booking_price">4141.83</field>
       <field name="offer">10</field>
       <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
       <field name="offer_price_date_expire_date">2025-06-08</field>
+      <field name="property_image" type="base64" file="bayvista_realestate/static/src/img/out-side-image/50.jpg"/>
     </record>
   </data>
 </odoo>

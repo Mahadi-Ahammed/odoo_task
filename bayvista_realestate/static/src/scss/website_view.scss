@@ -426,3 +426,17 @@ ul.list-unstyled li {
         }
     }
 }
+
+.property-image-wrapper {
+height: 200px;
+overflow: hidden;
+border-radius: 8px;
+}
+
+.property-image-wrapper img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
