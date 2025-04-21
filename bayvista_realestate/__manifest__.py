@@ -10,6 +10,7 @@
         'security/security.xml',
         'security/ir.model.access.csv',   
         'data/res_users.xml',
+	'data/home_page.xml',
         'data/website_menu_data.xml',
         'data/properties_page.xml',
         'views/property_views.xml',

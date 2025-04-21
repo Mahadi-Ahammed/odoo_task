@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="bay_vista_realestate_homepage" model="website.page">
+            <field name="name">Home Page</field>
+            <field name="url">/bay_vista_home</field>
+            <field name="type">qweb</field>
+            <field name="is_published">True</field>
+            <field name="is_homepage">True</field>
+            <field name="website_indexed" eval="True" />
+            <field name="website_id" ref="website.default_website" />
+            <field name="key">bayvista_realestate.custom_home_page</field>
+            <field name="arch" type="xml">
+                <t name="Homepage" t-name="website.homepage">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'homepage'" />
+                        <div id="wrap" class="oe_structure">
+                            <!-- test -->
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed o_cc o_cc5 pt232 pb232"
+                                data-scroll-background-ratio="1" data-snippet="s_cover">
+                                <span class="s_parallax_bg oe_img_bg"
+                                
+                                    style="background-image: url('/bayvista_realestate/static/src/img/cover.jpg'); background-position: 50% 75%;" />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container s_allow_columns">
+                                    <h1 class="display-3" style="text-align: center;">Your dream
+                                        home awaits</h1>
+                                    <p class="lead" style="text-align: center;">At our real estate
+                                        agency, we specialize in connecting buyers and sellers with
+                                        the perfect properties. Our dedicated team offers
+                                        personalized services, expert market analysis, and a
+                                        comprehensive approach to real estate that ensures a smooth
+                                        transaction for every client.</p>
+                                    <p style="text-align: center;">
+                                        <a class="btn btn-secondary mb-2" href="/contactus">Explore
+                                            More Properties</a>
+                                        <a class="btn btn-outline-secondary mb-2" href="/contactus">Contact
+                                            us now</a>
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="s_text_image pt80 pb80" data-snippet="s_text_image">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5 pt16 pb16">
+                                            <h2 class="h3-fs">Elevate Your <strong>Home Journey</strong></h2>
+                                            <p>Expert real estate services</p>
+                                            <p>Our clients are our top priority – we listen to their
+                                                needs and provide personalized solutions.</p>
+                                            <p>
+                                                <a href="#" class="btn btn-secondary">Find your
+                                                    dream home today</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6 offset-lg-1 pt16 pb16">
+                                            <img src="/web/image/website.s_text_image_default_image"
+                                                class="img img-fluid mx-auto rounded" alt=""
+                                                loading="lazy" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_numbers o_cc o_cc1 pt80 pb80" data-snippet="s_numbers">
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-4">
+                                            <h3 class="mb-3 h4">Key Metrics of<br />Our Real Estate
+                                                Success</h3>
+                                            <p class="lead">Analyzing the numbers behind our
+                                                success: <br class="d-none d-xxl-inline" />an
+                                                in-depth look at the key metrics driving our real
+                                                estate achievements</p>
+                                        </div>
+                                        <div class="col-lg-7 offset-lg-1">
+                                            <div class="row">
+                                                <div class="col-lg-4 pt24 pb24 text-center"
+                                                    data-name="Number Box">
+                                                    <p class="lead">
+                                                        <span class="s_number display-1-fs">12k</span>
+                                                        <br />
+                                                        <span class="h5-fs">Available Properties</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 pt24 pb24 text-center"
+                                                    data-name="Number Box">
+                                                    <p class="lead">
+                                                        <span class="s_number display-1-fs">45%</span>
+                                                        <br />
+                                                        <span class="h5-fs">Increased Sales</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 pt24 pb24 text-center"
+                                                    data-name="Number Box">
+                                                    <p class="lead">
+                                                        <span class="s_number display-1-fs">8+</span>
+                                                        <br />
+                                                        <span class="h5-fs">Exceptional Listings</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+        
+    </data>
+
+
+</odoo>
