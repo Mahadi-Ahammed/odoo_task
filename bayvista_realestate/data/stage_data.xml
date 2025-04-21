@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="property_stage_draft" model="property.stage">
+            <field name="name">Draft</field>
+            <field name="sequence">1</field>
+            <field name="fold">0</field>
+        </record>
+
+        <record id="property_stage_new" model="property.stage">
+            <field name="name">New</field>
+            <field name="sequence">2</field>
+            <field name="fold">0</field>
+        </record>
+
+        <record id="property_stage_booked" model="property.stage">
+            <field name="name">Booked</field>
+            <field name="sequence">3</field>
+            <field name="fold">0</field>
+        </record>
+
+        <record id="property_stage_sold" model="property.stage">
+            <field name="name">Sold</field>
+            <field name="sequence">4</field>
+            <field name="fold">0</field>
+        </record>
+    </data>
+</odoo>

@@ -1,4 +1,4 @@
-# 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
+
 import openai
 import os
 openai.api_key = os.getenv('OPENAI_API_KEY')

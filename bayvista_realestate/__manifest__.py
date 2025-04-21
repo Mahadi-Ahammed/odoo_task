@@ -18,6 +18,8 @@
         'views/menu_hide.xml',
         'views/vista_property_stage_view.xml',
 	    'views/properties_details.xml',
+        'data/stage_data.xml',
+        'data/property_data.xml',
 
     ],
     'assets': {

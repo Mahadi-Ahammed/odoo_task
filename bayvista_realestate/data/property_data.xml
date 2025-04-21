@@ -1,0 +1,1004 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <data noupdate="0">
+    <record id="property_1" model="bay.vista.property">
+      <field name="name">Sullivan-Bowers</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">3313.5</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Line, Beyond, Its, Particularly</field>
+      <field name="street">Jonathan Pass</field>
+      <field name="city">Changchester</field>
+      <field name="zip_code">27302</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2144.48</field>
+      <field name="booking_price">3979.81</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-17</field>
+    </record>
+    <record id="property_2" model="bay.vista.property">
+      <field name="name">Davis Group</field>
+      <field name="address">753 Padilla Circles, New Jeffrey, FL 71671</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">2634.22</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Language, Ball, Floor, Meet</field>
+      <field name="street">Brown Plaza</field>
+      <field name="city">Ramoshaven</field>
+      <field name="zip_code">64632</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">365844.84</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">3882.13</field>
+      <field name="offer">25</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-14</field>
+    </record>
+    <record id="property_3" model="bay.vista.property">
+      <field name="name">Maynard PLC</field>
+      <field name="address">1965 Kelly Field Apt. 094, Jonesberg, FL 05565</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">3059.41</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Successful, Together, Type, Music</field>
+      <field name="street">Olsen Plains</field>
+      <field name="city">West Andreaville</field>
+      <field name="zip_code">51788</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">682859.43</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">3972.32</field>
+      <field name="offer">20</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-05-19</field>
+    </record>
+    <record id="property_4" model="bay.vista.property">
+      <field name="name">Riley-Hayes</field>
+      <field name="address">59179 Bruce Gardens Apt. 413, Lauramouth, AR 13687</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">2271.07</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Situation, Talk, Despite, Stage</field>
+      <field name="street">Patty Radial</field>
+      <field name="city">Aimeebury</field>
+      <field name="zip_code">83627</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">574017.92</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">598.38</field>
+      <field name="offer">36</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-03</field>
+    </record>
+    <record id="property_5" model="bay.vista.property">
+      <field name="name">Johnson Inc</field>
+      <field name="address">173 Sharon Brooks, Oliverview, IN 09934</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">2599.6</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Positive, Go, Congress, Mean</field>
+      <field name="street">Peter Land</field>
+      <field name="city">North Davidborough</field>
+      <field name="zip_code">05662</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2072.37</field>
+      <field name="booking_price">1078.14</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-07-08</field>
+    </record>
+    <record id="property_6" model="bay.vista.property">
+      <field name="name">Massey-Sellers</field>
+      <field name="address">22584 Candice Mills, North Thomas, OK 67164</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">2529.21</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">True, Power, Home, Price</field>
+      <field name="street">Howard Street</field>
+      <field name="city">Lake Vanessaborough</field>
+      <field name="zip_code">20609</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">502340.22</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4917.54</field>
+      <field name="offer">10</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-07-02</field>
+    </record>
+    <record id="property_7" model="bay.vista.property">
+      <field name="name">Gill Group</field>
+      <field name="address">599 Jennifer Loaf Suite 109, Lake Matthew, IN 84046</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">3063.26</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Large, Report, Purpose, Themselves</field>
+      <field name="street">Amy Dale</field>
+      <field name="city">South Judithmouth</field>
+      <field name="zip_code">04635</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">223074.25</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">1860.43</field>
+      <field name="offer">10</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-02</field>
+    </record>
+    <record id="property_8" model="bay.vista.property">
+      <field name="name">Martin Inc</field>
+      <field name="address">8789 Nicole Park, Larrymouth, MT 25142</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">3882.05</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Nature, White, Without, Study</field>
+      <field name="street">Barton Station</field>
+      <field name="city">Savageshire</field>
+      <field name="zip_code">17608</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">306326.13</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4154.02</field>
+      <field name="offer">10</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-06</field>
+    </record>
+    <record id="property_9" model="bay.vista.property">
+      <field name="name">Fischer, Baird and Lowe</field>
+      <field name="address">93442 Thomas Locks, North Joshuamouth, WY 15676</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">1605.08</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Technology, Card, Minute, Practice</field>
+      <field name="street">Smith Bridge</field>
+      <field name="city">South Stefaniechester</field>
+      <field name="zip_code">45989</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3417.9</field>
+      <field name="booking_price">3654.4</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-07-19</field>
+    </record>
+    <record id="property_10" model="bay.vista.property">
+      <field name="name">Grant-Potts</field>
+      <field name="address">USS Mathis, FPO AP 80139</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">2897.38</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Pretty, Republican, Total, Policy</field>
+      <field name="street">Billy Springs</field>
+      <field name="city">Port Erictown</field>
+      <field name="zip_code">49318</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">354305.31</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">3571.15</field>
+      <field name="offer">32</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-05-29</field>
+    </record>
+    <record id="property_11" model="bay.vista.property">
+      <field name="name">Cook-Clarke</field>
+      <field name="address">004 Edward Prairie Suite 568, West Danny, IA 06826</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">1563.45</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Film, Tax, Rock, Few</field>
+      <field name="street">Smith Drive</field>
+      <field name="city">East Nicholas</field>
+      <field name="zip_code">43560</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">359201.34</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">998.9</field>
+      <field name="offer">31</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-05-06</field>
+    </record>
+    <record id="property_12" model="bay.vista.property">
+      <field name="name">Martinez-Wilson</field>
+      <field name="address">5229 Drake Route, North Lindseyborough, IN 08516</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">1549.53</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">His, Better, News, Face</field>
+      <field name="street">Wells Ville</field>
+      <field name="city">Robertville</field>
+      <field name="zip_code">64545</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">342665.93</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">2414.19</field>
+      <field name="offer">31</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-05-20</field>
+    </record>
+    <record id="property_13" model="bay.vista.property">
+      <field name="name">Waters, Reynolds and Howard</field>
+      <field name="address">731 Sanders Fords, Port Jasonberg, ID 60585</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">691.11</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Her, National, Character, Writer</field>
+      <field name="street">Vanessa Green</field>
+      <field name="city">South Christopher</field>
+      <field name="zip_code">64451</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2271.64</field>
+      <field name="booking_price">4077.59</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-08</field>
+    </record>
+    <record id="property_14" model="bay.vista.property">
+      <field name="name">Stark, Morris and Jimenez</field>
+      <field name="address">930 Thornton Summit, Lisaton, FL 34171</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">3026.87</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Owner, Choose, Here, Family</field>
+      <field name="street">Rich Park</field>
+      <field name="city">New Richard</field>
+      <field name="zip_code">93086</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">292510.66</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4829.4</field>
+      <field name="offer">27</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-05-07</field>
+    </record>
+    <record id="property_15" model="bay.vista.property">
+      <field name="name">Turner Group</field>
+      <field name="address">75868 Audrey Springs, Lake Ronaldborough, ND 78962</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">2000.91</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Individual, Win, Suddenly, Win</field>
+      <field name="street">Carl Curve</field>
+      <field name="city">Jonesland</field>
+      <field name="zip_code">80118</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">470108.68</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">2318.12</field>
+      <field name="offer">39</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-23</field>
+    </record>
+    <record id="property_16" model="bay.vista.property">
+      <field name="name">White, Hunter and Scott</field>
+      <field name="address">6660 Danielle Crossroad Apt. 450, South Robertfort, PA 94504</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">881.51</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Bank, Recognize, Special, Good</field>
+      <field name="street">Diane Alley</field>
+      <field name="city">Port Michelle</field>
+      <field name="zip_code">05112</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3402.6</field>
+      <field name="booking_price">3347.12</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-06-17</field>
+    </record>
+    <record id="property_17" model="bay.vista.property">
+      <field name="name">Johnson PLC</field>
+      <field name="address">85367 Nicole Ridge Suite 951, Kristinaberg, MS 39010</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">984.56</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">True, Their, Race, Special</field>
+      <field name="street">Thomas Drive</field>
+      <field name="city">Hugheston</field>
+      <field name="zip_code">68528</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">887789.15</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">2930.85</field>
+      <field name="offer">861621.15</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_draft"/>
+      <field name="offer_price_date_expire_date">2025-05-26</field>
+    </record>
+    <record id="property_18" model="bay.vista.property">
+      <field name="name">Kelly-Chen</field>
+      <field name="address">USS Tucker, FPO AE 68666</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">2198.3</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Project, Occur, Democratic, Behavior</field>
+      <field name="street">Watson Field</field>
+      <field name="city">North Kimberly</field>
+      <field name="zip_code">82739</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">507381.96</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4998.24</field>
+      <field name="offer">45</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-07-18</field>
+    </record>
+    <record id="property_19" model="bay.vista.property">
+      <field name="name">Livingston-Walls</field>
+      <field name="address">2076 Johnson Way, Jenniferland, CA 16410</field>
+      <field name="number_bed">2</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">895.49</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Grow, Ahead, Girl, Act</field>
+      <field name="street">Ronald Port</field>
+      <field name="city">Hunterville</field>
+      <field name="zip_code">30712</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2997.2</field>
+      <field name="booking_price">821.35</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-06-05</field>
+    </record>
+    <record id="property_20" model="bay.vista.property">
+      <field name="name">Dennis, Santana and Adkins</field>
+      <field name="address">322 Rodriguez Key, Davidborough, MA 62546</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">1258.14</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Which, Fast, There, Network</field>
+      <field name="street">Aaron Shoals</field>
+      <field name="city">Chadberg</field>
+      <field name="zip_code">43359</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3169.57</field>
+      <field name="booking_price">3990.7</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-07-16</field>
+    </record>
+    <record id="property_21" model="bay.vista.property">
+      <field name="name">Bennett and Sons</field>
+      <field name="address">USNS Stewart, FPO AE 31520</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">2283.84</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Senior, Fact, Information, Animal</field>
+      <field name="street">Amanda Inlet</field>
+      <field name="city">New Victoria</field>
+      <field name="zip_code">17833</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2119.02</field>
+      <field name="booking_price">3224.62</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-05-16</field>
+    </record>
+    <record id="property_22" model="bay.vista.property">
+      <field name="name">Yang-Thomas</field>
+      <field name="address">37580 Ortiz Mall Suite 735, Stephanieland, WY 14737</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">784.5</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Everybody, Newspaper, Read, Somebody</field>
+      <field name="street">Robert Plaza</field>
+      <field name="city">South Christianland</field>
+      <field name="zip_code">58980</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">538124.1</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4499.09</field>
+      <field name="offer">12</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-07-13</field>
+    </record>
+    <record id="property_23" model="bay.vista.property">
+      <field name="name">Giles-Thomas</field>
+      <field name="address">3407 Smith Hills, Port Tiffanyport, PA 20977</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">3172.11</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Interest, Seem, Begin, Marriage</field>
+      <field name="street">Thompson Motorway</field>
+      <field name="city">Lopezchester</field>
+      <field name="zip_code">30957</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2803.36</field>
+      <field name="booking_price">1466.08</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-07-05</field>
+    </record>
+    <record id="property_24" model="bay.vista.property">
+      <field name="name">Smith Group</field>
+      <field name="address">1454 Caitlin Camp Apt. 448, Davidbury, WV 21938</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">2434.31</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Attention, Team, Executive, Care</field>
+      <field name="street">Joseph Skyway</field>
+      <field name="city">Ramireztown</field>
+      <field name="zip_code">69059</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2970.44</field>
+      <field name="booking_price">2623.35</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-06-30</field>
+    </record>
+    <record id="property_25" model="bay.vista.property">
+      <field name="name">Carter-Watson</field>
+      <field name="address">16697 Anita Hills, Crystalchester, NJ 64576</field>
+      <field name="number_bed">2</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">2934.74</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Reason, Five, Present, Art</field>
+      <field name="street">Figueroa Turnpike</field>
+      <field name="city">New Daniel</field>
+      <field name="zip_code">39846</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">862117.06</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">2606.89</field>
+      <field name="offer">8</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_new"/>
+      <field name="offer_price_date_expire_date">2025-05-22</field>
+    </record>
+    <record id="property_26" model="bay.vista.property">
+      <field name="name">Oneal-Smith</field>
+      <field name="address">160 Williams River, West Morganport, IN 18940</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">2595.52</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Seem, Explain, Black, Leave</field>
+      <field name="street">Anthony Mountains</field>
+      <field name="city">Lake Tyler</field>
+      <field name="zip_code">43780</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">339845.33</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">3045.6</field>
+      <field name="offer">20</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-07-12</field>
+    </record>
+    <record id="property_27" model="bay.vista.property">
+      <field name="name">Warren and Sons</field>
+      <field name="address">5667 Blair Underpass, South Shelby, VT 07027</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">3504.94</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Town, Almost, Plan, That</field>
+      <field name="street">Hernandez Station</field>
+      <field name="city">Jacksonchester</field>
+      <field name="zip_code">48160</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">495146.07</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">993.77</field>
+      <field name="offer">39</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-06-08</field>
+    </record>
+    <record id="property_28" model="bay.vista.property">
+      <field name="name">Bush PLC</field>
+      <field name="address">7088 Carpenter Overpass Suite 735, Bobbyton, MI 01008</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">748.15</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Face, According, As, Into</field>
+      <field name="street">Cheryl Ridge</field>
+      <field name="city">Lake Danielleburgh</field>
+      <field name="zip_code">29620</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3609.27</field>
+      <field name="booking_price">2370.75</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-06-30</field>
+    </record>
+    <record id="property_29" model="bay.vista.property">
+      <field name="name">Obrien Inc</field>
+      <field name="address">754 Alejandra Field Suite 138, Jacobborough, TX 96055</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">2304.8</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Save, Fine, Team, Effort</field>
+      <field name="street">Lee Rest</field>
+      <field name="city">Grantbury</field>
+      <field name="zip_code">45581</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">175097.7</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">2769.35</field>
+      <field name="offer">16</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-05-23</field>
+    </record>
+    <record id="property_30" model="bay.vista.property">
+      <field name="name">Kim, Stark and Jenkins</field>
+      <field name="address">11312 Henson Forest Suite 916, Williamsburgh, NM 29343</field>
+      <field name="number_bed">2</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">1502.11</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Campaign, That, Various, Floor</field>
+      <field name="street">Albert Park</field>
+      <field name="city">North Kevin</field>
+      <field name="zip_code">57496</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2342.97</field>
+      <field name="booking_price">2707.49</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-07-18</field>
+    </record>
+    <record id="property_31" model="bay.vista.property">
+      <field name="name">Palmer-Murray</field>
+      <field name="address">01912 Wright Haven Apt. 886, North Paulview, WA 74513</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">1269.49</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Grow, Push, Region, Produce</field>
+      <field name="street">Jennifer Tunnel</field>
+      <field name="city">New Rachelside</field>
+      <field name="zip_code">29541</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">483093.3</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">1757.8</field>
+      <field name="offer">25</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-06-02</field>
+    </record>
+    <record id="property_32" model="bay.vista.property">
+      <field name="name">Mitchell-Jackson</field>
+      <field name="address">9026 Theresa Pass Apt. 237, East Jessica, IN 50912</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">3413.16</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Government, Opportunity, Pick, Too</field>
+      <field name="street">Hall Road</field>
+      <field name="city">North April</field>
+      <field name="zip_code">14658</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3165.51</field>
+      <field name="booking_price">3329.53</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-05-16</field>
+    </record>
+    <record id="property_33" model="bay.vista.property">
+      <field name="name">Delgado, Guerrero and Simpson</field>
+      <field name="address">USCGC Payne, FPO AP 10825</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">2433.07</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Else, Page, Region, Start</field>
+      <field name="street">Parker Forges</field>
+      <field name="city">New Caitlinfort</field>
+      <field name="zip_code">38738</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3477.92</field>
+      <field name="booking_price">3669.35</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-07-09</field>
+    </record>
+    <record id="property_34" model="bay.vista.property">
+      <field name="name">Cooper Group</field>
+      <field name="address">5240 Berry Centers, West Andrew, AR 03720</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">1612.78</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Drop, Actually, Watch, Force</field>
+      <field name="street">Leslie Summit</field>
+      <field name="city">Acevedoborough</field>
+      <field name="zip_code">08680</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2618.11</field>
+      <field name="booking_price">4167.99</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-06-06</field>
+    </record>
+    <record id="property_35" model="bay.vista.property">
+      <field name="name">Graham-Howard</field>
+      <field name="address">660 Macdonald Place Suite 091, Finleyburgh, NY 18618</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">1240.12</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Perform, Product, Style, Record</field>
+      <field name="street">Patricia Forge</field>
+      <field name="city">Teresachester</field>
+      <field name="zip_code">10940</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">3065.85</field>
+      <field name="booking_price">1205.02</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-07-15</field>
+    </record>
+    <record id="property_36" model="bay.vista.property">
+      <field name="name">Newton Ltd</field>
+      <field name="address">9197 Christina Canyon, Matthewfurt, SC 05261</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">1041.4</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Many, Group, Public, Leader</field>
+      <field name="street">Sonya Valley</field>
+      <field name="city">Johnburgh</field>
+      <field name="zip_code">67011</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">2294.95</field>
+      <field name="booking_price">4613.93</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-06-03</field>
+    </record>
+    <record id="property_37" model="bay.vista.property">
+      <field name="name">Smith-Moreno</field>
+      <field name="address">89840 Foster Crest Suite 570, West Jodyton, TX 89681</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">2317.32</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Old, Simply, Face, Rather</field>
+      <field name="street">Nelson Park</field>
+      <field name="city">Francisfurt</field>
+      <field name="zip_code">27645</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1653.07</field>
+      <field name="booking_price">4225.57</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_booked"/>
+      <field name="offer_price_date_expire_date">2025-07-13</field>
+    </record>
+    <record id="property_38" model="bay.vista.property">
+      <field name="name">Willis Ltd</field>
+      <field name="address">25090 Stephanie Lake Suite 457, Burkeburgh, WY 18950</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">3310.22</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Notice, Kind, Game, Act</field>
+      <field name="street">Darren Isle</field>
+      <field name="city">Paulview</field>
+      <field name="zip_code">95085</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">818.24</field>
+      <field name="booking_price">3877.49</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-07-07</field>
+    </record>
+    <record id="property_39" model="bay.vista.property">
+      <field name="name">Dodson-Thompson</field>
+      <field name="address">188 Fischer Grove, Justinchester, VT 37258</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">1273.25</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Watch, Mrs, Never, Wrong</field>
+      <field name="street">Chad Manors</field>
+      <field name="city">Browningview</field>
+      <field name="zip_code">25403</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">341531.35</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">3566.92</field>
+      <field name="offer">31</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-05-10</field>
+    </record>
+    <record id="property_40" model="bay.vista.property">
+      <field name="name">Cruz, Marshall and Johnson</field>
+      <field name="address">PSC 9305, Box 8235, APO AP 92263</field>
+      <field name="number_bed">4</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">1160.48</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Market, Room, Eat, Through</field>
+      <field name="street">Kristen Squares</field>
+      <field name="city">Moodytown</field>
+      <field name="zip_code">36476</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1033.63</field>
+      <field name="booking_price">1539.59</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-07-19</field>
+    </record>
+    <record id="property_41" model="bay.vista.property">
+      <field name="name">Reeves, Shields and Jacobson</field>
+      <field name="address">27166 King Throughway, Chelsealand, AK 65056</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">1515.36</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Action, Economy, Several, Hit</field>
+      <field name="street">Ashley Freeway</field>
+      <field name="city">Port Sara</field>
+      <field name="zip_code">83780</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1485.63</field>
+      <field name="booking_price">2729.8</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-05-27</field>
+    </record>
+    <record id="property_42" model="bay.vista.property">
+      <field name="name">Elliott LLC</field>
+      <field name="address">7820 Ashlee Key, Adamborough, DE 88502</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">957.93</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Music, Amount, Up, Suddenly</field>
+      <field name="street">Gomez Port</field>
+      <field name="city">Terryton</field>
+      <field name="zip_code">03828</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1473.44</field>
+      <field name="booking_price">516.48</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-05-11</field>
+    </record>
+    <record id="property_43" model="bay.vista.property">
+      <field name="name">Hernandez, Delacruz and Dixon</field>
+      <field name="address">0808 Herring Key, North Anitaview, KS 43484</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">3019.45</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Red, Effect, Else, Very</field>
+      <field name="street">Russell Divide</field>
+      <field name="city">Philipberg</field>
+      <field name="zip_code">20843</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1659.18</field>
+      <field name="booking_price">3569.34</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-07-04</field>
+    </record>
+    <record id="property_44" model="bay.vista.property">
+      <field name="name">Meyers-Jones</field>
+      <field name="address">378 Jenna Shoal Apt. 780, Port Zacharytown, WI 10985</field>
+      <field name="number_bed">5</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">3820.67</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Billion, Parent, Now, From</field>
+      <field name="street">Darlene Bypass</field>
+      <field name="city">Tranton</field>
+      <field name="zip_code">50054</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">185751.9</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">1071.88</field>
+      <field name="offer">17</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-05-12</field>
+    </record>
+    <record id="property_45" model="bay.vista.property">
+      <field name="name">Gross Inc</field>
+      <field name="address">60460 Michael Village, South Brianstad, RI 99652</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">3168.86</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Eight, Finally, Support, Law</field>
+      <field name="street">Logan Brooks</field>
+      <field name="city">Vanessaville</field>
+      <field name="zip_code">24181</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1007.58</field>
+      <field name="booking_price">2932.48</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-07-06</field>
+    </record>
+    <record id="property_46" model="bay.vista.property">
+      <field name="name">Johnson Inc</field>
+      <field name="address">7877 Michaela Plain, Gibbsview, SD 68116</field>
+      <field name="number_bed">6</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">2293.63</field>
+      <field name="property_for">rent</field>
+      <field name="facilities">Believe, Step, Four, Western</field>
+      <field name="street">Brown Court</field>
+      <field name="city">South Leahborough</field>
+      <field name="zip_code">62286</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">0</field>
+      <field name="rent_price">1097.93</field>
+      <field name="booking_price">4958.25</field>
+      <field name="offer">0</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-05-10</field>
+    </record>
+    <record id="property_47" model="bay.vista.property">
+      <field name="name">Blackburn Ltd</field>
+      <field name="address">39507 Williams Garden, Markbury, IN 21947</field>
+      <field name="number_bed">1</field>
+      <field name="number_bath">2</field>
+      <field name="square_feet">2616.07</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">There, Leg, Theory, Case</field>
+      <field name="street">Aaron Junction</field>
+      <field name="city">East Reginaport</field>
+      <field name="zip_code">74545</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">481299.39</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4605.98</field>
+      <field name="offer">16</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-05-03</field>
+    </record>
+    <record id="property_48" model="bay.vista.property">
+      <field name="name">Smith LLC</field>
+      <field name="address">19922 French Manor, Bradleymouth, IA 18566</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">3</field>
+      <field name="square_feet">3877.48</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Hair, Describe, Hundred, Candidate</field>
+      <field name="street">Higgins Extensions</field>
+      <field name="city">East Sarahtown</field>
+      <field name="zip_code">74702</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">879757.46</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">3251.56</field>
+      <field name="offer">20</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-07-02</field>
+    </record>
+    <record id="property_49" model="bay.vista.property">
+      <field name="name">Hendricks and Sons</field>
+      <field name="address">144 Daniels Rapids Suite 340, Michellefurt, CT 70555</field>
+      <field name="number_bed">2</field>
+      <field name="number_bath">1</field>
+      <field name="square_feet">2280.69</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">There, Any, Require, Agree</field>
+      <field name="street">Sanchez Light</field>
+      <field name="city">Tammychester</field>
+      <field name="zip_code">55688</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">660153.0</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">503.16</field>
+      <field name="offer">27</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-06-03</field>
+    </record>
+    <record id="property_50" model="bay.vista.property">
+      <field name="name">Peterson Group</field>
+      <field name="address">155 Courtney Trafficway Suite 803, Gregoryshire, LA 50323</field>
+      <field name="number_bed">3</field>
+      <field name="number_bath">4</field>
+      <field name="square_feet">1087.96</field>
+      <field name="property_for">sale</field>
+      <field name="facilities">Play, Fact, Issue, Radio</field>
+      <field name="street">Munoz Estates</field>
+      <field name="city">Hamiltonville</field>
+      <field name="zip_code">35768</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="state_id" ref="base.state_us_10"/>
+      <field name="sale_price">636371.91</field>
+      <field name="rent_price">0</field>
+      <field name="booking_price">4141.83</field>
+      <field name="offer">10</field>
+      <field name="stage_id" ref="bayvista_realestate.property_stage_sold"/>
+      <field name="offer_price_date_expire_date">2025-06-08</field>
+    </record>
+  </data>
+</odoo>
