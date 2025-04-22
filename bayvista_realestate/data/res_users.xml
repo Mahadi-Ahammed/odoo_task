@@ -21,5 +21,61 @@
             <field name="company_id" ref="base.main_company"/>
             <field name="company_ids" eval="[Command.link(ref('base.main_company'))]"/>
         </record>
+
+        <!--buyer_1-->
+        <record model="res.partner" id="buyer_1">
+            <field name="name">Buyer 1</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">buyer_1@test.com</field>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="buyer_1_user" model="res.users">
+            <field name="name">Buyer 1</field>
+            <field name="login">buyer_1</field>
+            <field name="password">buyer_1</field>
+            <field name="role_sync">buyer</field>
+            <field name="email">buyer_1@test.com</field>
+            <field name="notification_type">inbox</field>
+            <field name="active" eval="True"/>
+            <field name="partner_id" ref="buyer_1"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="company_ids" eval="[Command.link(ref('base.main_company'))]"/>
+            <field name="groups_id" eval="[(4, ref('bayvista_realestate.group_bayvista_buyer'))]"/>
+        </record>
+
+        <!--owner_1-->
+        <record model="res.partner" id="owner_1">
+            <field name="name">Owner 1</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">owner_1@test.com</field>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="owner_1_user" model="res.users">
+            <field name="name">Owner 1</field>
+            <field name="login">owner_1</field>
+            <field name="password">owner_1</field>
+            <field name="role_sync">owner</field>
+            <field name="role_sync">owner</field>
+            <field name="email">owner_1@test.com</field>
+            <field name="notification_type">inbox</field>
+            <field name="active" eval="True"/>
+            <field name="partner_id" ref="owner_1"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="company_ids" eval="[Command.link(ref('base.main_company'))]"/>
+            <field name="groups_id" eval="[(4, ref('bayvista_realestate.group_bayvista_owner'))]"/>
+        </record>
+
+        <!-- record rule -->
+        <!-- <record id="buyer_rule" model="ir.rule">
+            <field name="name">Restrict Buyer Edit</field>
+            <field name="model_id" ref="model_bay_vista_property"/>
+            <field name="domain_force">[('role_sync', '=', 'buyer')]</field>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_read" eval="True"/>
+        </record> -->
     </data>
 </odoo>

@@ -98,8 +98,8 @@ class PropertiesController(http.Controller):
                     })
             images_ids.append(attachment.id if attachment else False)
 
-        current_prop_user = request.env['bay.vista.user'].sudo().search([
-            ('odoo_user_id', '=', request.env.user.id)
+        current_prop_user = request.env['res.users'].sudo().search([
+            ('id', '=', request.env.user.id)
         ], limit=1)
         
         reviews = prop.sudo().review_ids
